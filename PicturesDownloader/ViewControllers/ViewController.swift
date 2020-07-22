@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 		"https://img1.akspic.ru/image/35104-moshhnye_mashiny-bamper-avtomobil-sportivnyj_avtomobil-lichnyj_roskoshnyj_avtomobil-1920x1080.jpg",
 		"https://via.placeholder.com/150"
 	]
+	
 	var image: UIImage?
 
 	@IBOutlet weak var tableView: UITableView!
