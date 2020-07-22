@@ -22,7 +22,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 		let screenWidth = screenSize.width
 		let screenHeight = screenSize.height
 
-		imageProvider.loadImage(url: urls[indexPath.row], size: CGSize(width: screenWidth, height: screenHeight)) { (image) in
+		imageProvider.loadImage(url: urls[indexPath.row], size: nil) { (image) in
 			nextVC.image = image
 		}
 		self.present(nextVC, animated: false)
