@@ -65,20 +65,5 @@
             </objects>
             <point key="canvasLocation" x="-226.08695652173915" y="0.6696428571428571"/>
         </scene>
-        <!--Image View Controller-->
-        <scene sceneID="Dj3-I2-9r9">
-            <objects>
-                <viewController storyboardIdentifier="ImageViewController" id="rsG-2k-yBh" customClass="ImageViewController" customModule="PicturesDownloader" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q1D-jY-TNw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="wLk-Oq-Xq7"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="taz-ZD-78C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="697" y="1"/>
-        </scene>
     </scenes>
 </document>
