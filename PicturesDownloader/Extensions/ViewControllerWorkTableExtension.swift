@@ -4,13 +4,17 @@ import UIKit
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		images.count
+		urls.count
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
-		cell.customImageView?.image = images[indexPath.row]
-		cell.customImageView?.sizeToFit()
+		let activity = ActivityIndicator(view: cell.contentView)
+		activity.startActivity()
+		imageProvider.loadImage(url: urls[indexPath.row], size: CGSize(width: view.frame.size.width, height: view.frame.size.width)) { (image) in
+			cell.configureCell(image: image)
+			activity.stopActivity()
+		}
 		return cell
 	}
 

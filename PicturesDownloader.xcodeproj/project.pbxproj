@@ -23,6 +23,7 @@
 		D52E996D24C70E33001B50EA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */; };
 		D52E996F24C7467B001B50EA /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E996E24C7467B001B50EA /* ImageViewController.swift */; };
 		D52E997124C74E53001B50EA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E997024C74E53001B50EA /* ImageView.swift */; };
+		D54C339224C99730006AB7D6 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C339124C99730006AB7D6 /* ActivityIndicator.swift */; };
 		D54D184624C827030059AE9D /* ViewControllerWorkTableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184524C827030059AE9D /* ViewControllerWorkTableExtension.swift */; };
 		D54D184824C83BF90059AE9D /* UIImageResizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */; };
 		D54D184B24C83CF20059AE9D /* CGSizeStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */; };
@@ -73,6 +74,7 @@
 		D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D52E996E24C7467B001B50EA /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		D52E997024C74E53001B50EA /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		D54C339124C99730006AB7D6 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		D54D184524C827030059AE9D /* ViewControllerWorkTableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWorkTableExtension.swift; sourceTree = "<group>"; };
 		D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageResizeExtension.swift; sourceTree = "<group>"; };
 		D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeStringExtension.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				D52E996224C06742001B50EA /* FileProvider.swift */,
 				D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */,
 				D52E996624C19715001B50EA /* ImageResizer.swift */,
+				D54C339124C99730006AB7D6 /* ActivityIndicator.swift */,
 				D52E993324BF4AE2001B50EA /* Main.storyboard */,
 				D52E993624BF4AE5001B50EA /* Assets.xcassets */,
 				D52E993824BF4AE5001B50EA /* LaunchScreen.storyboard */,
@@ -363,6 +366,7 @@
 				D5D850E524C84831005415CB /* ImageProviderProtocol.swift in Sources */,
 				D52E992E24BF4AE2001B50EA /* AppDelegate.swift in Sources */,
 				D5D850E324C847DF005415CB /* FileProviderProtocol.swift in Sources */,
+				D54C339224C99730006AB7D6 /* ActivityIndicator.swift in Sources */,
 				D52E996724C19715001B50EA /* ImageResizer.swift in Sources */,
 				D52E995F24BF4C03001B50EA /* NetworkService.swift in Sources */,
 				D52E993024BF4AE2001B50EA /* SceneDelegate.swift in Sources */,

@@ -15,6 +15,7 @@ class ImageProvider: ImageProviderProtocol {
 		self.imageNameManager = imageNameManager
 		self.imageResizer = imageResizer
 	}
+
 	func loadImage(url: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
 		if fileProvider.checkOriginImage(url: url) {
 			let nameFile = imageNameManager.getNameFileImage(url: url, size: size)
