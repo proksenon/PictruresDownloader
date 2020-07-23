@@ -6,4 +6,5 @@ protocol FileProviderProtocol {
 	func readFile(nameFile: String)->Data?
 	func createFile(url: String, nameFile: String)->String
 	func writeToFile(data: Data, path: String)
+	func removeAllFiles()
 }

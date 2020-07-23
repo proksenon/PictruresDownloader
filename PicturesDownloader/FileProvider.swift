@@ -1,12 +1,12 @@
 import Foundation
 
-class FileProvider: FileProviderProtocol {
+final class FileProvider: FileProviderProtocol {
 	let defaults = UserDefaults.standard
 	let fileManager = FileManager()
 	let tempDirectory = NSTemporaryDirectory()
 	let networkService: NetworkServiceProtocol = NetworkService()
 	let imageResizer = ImageResizer()
-
+	
 	func checkOriginImage(url: String)->Bool {
 		if let _ = defaults.object(forKey: url) as? [String:String] {return true}
 		return false
@@ -50,5 +50,27 @@ class FileProvider: FileProviderProtocol {
 			return contentsOfFile
 		}
 		return nil
+	}
+
+	func removeFile(nameFile: String) {
+        do {
+			let path = (tempDirectory as NSString).appendingPathComponent(nameFile)
+			try fileManager.removeItem(atPath: path)
+            print("file deleted")
+        } catch let error as NSError {
+            print("error occured while deleting file: \(error.localizedDescription)")
+        }
+	}
+
+	func removeAllFiles() {
+		do {
+			let filesInDirectory = try fileManager.contentsOfDirectory(atPath: tempDirectory)
+			for file in filesInDirectory {
+				removeFile(nameFile: file)
+			}
+		} catch let error as NSError {
+            print("error occured while deleting file: \(error.localizedDescription)")
+        }
+
 	}
 }

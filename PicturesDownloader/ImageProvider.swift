@@ -1,6 +1,6 @@
 import UIKit
 
-class ImageProvider: ImageProviderProtocol {
+final class ImageProvider: ImageProviderProtocol {
 	let networkService: NetworkServiceProtocol
 	let fileProvider: FileProviderProtocol
 	let imageNameManager: ImageNameManagerProtocol
@@ -17,7 +17,8 @@ class ImageProvider: ImageProviderProtocol {
 	}
 
 	func loadImage(url: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
-		if fileProvider.checkOriginImage(url: url) {
+		let nameFileOrigin = imageNameManager.getNameFileImage(url: url, size: nil)
+		if fileProvider.checkOriginImage(url: url) && fileProvider.checkDirectory(nameFile: nameFileOrigin) {
 			let nameFile = imageNameManager.getNameFileImage(url: url, size: size)
 			if fileProvider.checkDirectory(nameFile: nameFile) {
 				if let data = fileProvider.readFile(nameFile: nameFile) {
@@ -31,7 +32,6 @@ class ImageProvider: ImageProviderProtocol {
 		} else {
 			if let currentUrl = URL(string: url) {
 				networkService.getData(url: currentUrl) { (data) in
-					let nameFileOrigin = self.imageNameManager.getNameFileImage(url: url, size: nil)
 					let path = self.fileProvider.createFile(url: url, nameFile: nameFileOrigin)
 					print(path)
 					self.fileProvider.writeToFile(data: data, path: path)
@@ -46,7 +46,7 @@ class ImageProvider: ImageProviderProtocol {
 		}
 	}
 
-	func originalToSize(url: String, nameFile: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
+	private func originalToSize(url: String, nameFile: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
 		if let data = fileProvider.readFile(nameFile: imageNameManager.getNameFileImage(url: url, size: nil)) {
 			if let newData = imageResizer.imageToSize(nameFile: nameFile, size: size, data: data) {
 				completion (UIImage(data: newData))
@@ -76,7 +76,7 @@ class ImageProvider: ImageProviderProtocol {
 		}
 	}
 
-	func sortImages(imagesWithUrl: [String: UIImage], urls: [String])->[UIImage?] {
+	private func sortImages(imagesWithUrl: [String: UIImage], urls: [String])->[UIImage?] {
 		var images: [UIImage?] = []
 		for url in urls {
 			images.append(imagesWithUrl[url])

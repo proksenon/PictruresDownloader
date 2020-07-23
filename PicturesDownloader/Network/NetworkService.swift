@@ -1,6 +1,6 @@
 import Foundation
 
-class NetworkService: NetworkServiceProtocol {
+final class NetworkService: NetworkServiceProtocol {
 	var session = URLSession.shared
 
 	init(session: URLSession = URLSession.shared) {

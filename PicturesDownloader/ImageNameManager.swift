@@ -1,6 +1,6 @@
 import UIKit
 
-class ImageNameManager: ImageNameManagerProtocol {
+final class ImageNameManager: ImageNameManagerProtocol {
 	let defaults = UserDefaults.standard
 	
 	func getNameFileImage(url: String, size: CGSize? = nil)-> String {

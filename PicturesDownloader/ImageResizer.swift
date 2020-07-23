@@ -1,6 +1,6 @@
 import UIKit
 
-class ImageResizer: ImageResizerProtocol {
+final class ImageResizer: ImageResizerProtocol {
 	
 	func imageToSize(nameFile:String, size: CGSize?, data: Data?) ->Data? {
 		if let data = data, let size = size {
