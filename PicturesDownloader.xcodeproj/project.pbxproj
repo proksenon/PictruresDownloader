@@ -29,6 +29,7 @@
 		D54D184824C83BF90059AE9D /* UIImageResizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */; };
 		D54D184B24C83CF20059AE9D /* CGSizeStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */; };
 		D56695AC24C9D7F200AFDDB6 /* StorageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56695AB24C9D7F200AFDDB6 /* StorageProviderProtocol.swift */; };
+		D582799924CD60FC0086CCC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D582799824CD60FC0086CCC9 /* Assets.xcassets */; };
 		D5D850DF24C8469D005415CB /* ImageResizerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D850DE24C8469D005415CB /* ImageResizerProtocol.swift */; };
 		D5D850E124C84730005415CB /* ImageNameManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D850E024C84730005415CB /* ImageNameManagerProtocol.swift */; };
 		D5D850E324C847DF005415CB /* FileProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D850E224C847DF005415CB /* FileProviderProtocol.swift */; };
@@ -82,6 +83,7 @@
 		D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageResizeExtension.swift; sourceTree = "<group>"; };
 		D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeStringExtension.swift; sourceTree = "<group>"; };
 		D56695AB24C9D7F200AFDDB6 /* StorageProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProviderProtocol.swift; sourceTree = "<group>"; };
+		D582799824CD60FC0086CCC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PicturesDownloader/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		D5D850DE24C8469D005415CB /* ImageResizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizerProtocol.swift; sourceTree = "<group>"; };
 		D5D850E024C84730005415CB /* ImageNameManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameManagerProtocol.swift; sourceTree = "<group>"; };
 		D5D850E224C847DF005415CB /* FileProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderProtocol.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				D54D184524C827030059AE9D /* ViewControllerWorkTableExtension.swift */,
+				D582799824CD60FC0086CCC9 /* Assets.xcassets */,
 				D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */,
 				D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */,
 			);
@@ -331,6 +334,7 @@
 			files = (
 				D52E993A24BF4AE5001B50EA /* LaunchScreen.storyboard in Resources */,
 				D52E993724BF4AE5001B50EA /* Assets.xcassets in Resources */,
+				D582799924CD60FC0086CCC9 /* Assets.xcassets in Resources */,
 				D52E993524BF4AE2001B50EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +555,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D5RK3QAMV;
 				INFOPLIST_FILE = PicturesDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,7 +574,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D5RK3QAMV;
 				INFOPLIST_FILE = PicturesDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

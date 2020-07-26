@@ -4,17 +4,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+	var window: UIWindow?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		return true
-	}
+		window = UIWindow(frame: UIScreen.main.bounds)
 
-	func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-		return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-	}
+	   let viewController = ViewController()
 
-	func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+	   window?.rootViewController = viewController
+	   window?.makeKeyAndVisible()
+	   return true
 	}
-
 
 }
