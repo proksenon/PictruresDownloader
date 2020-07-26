@@ -34,6 +34,7 @@ class ViewController: UIViewController {
 		tableView.tableFooterView = UIView()
 		self.view.addSubview(tableView)
 		tableView.reloadData()
+		print("sss")
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 		NSLayoutConstraint.activate([
 			tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: -50),
