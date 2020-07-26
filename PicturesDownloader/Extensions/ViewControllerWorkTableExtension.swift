@@ -8,13 +8,19 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
+		NSLayoutConstraint.activate([cell.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.height/3)])
+		print(UIScreen.main.bounds.size.width)
 		let activity = ActivityIndicator(view: cell.contentView)
+
 		activity.startActivity()
 		imageProvider.loadImage(url: urls[indexPath.row], size: CGSize(width: view.frame.size.width, height: view.frame.size.width)) { (image) in
 			cell.configureCell(image: image)
 			activity.stopActivity()
-		}
+			}
+
+
 		return cell
 	}
 
@@ -32,3 +38,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 		self.present(nextVC, animated: false)
 	}
 }
+
