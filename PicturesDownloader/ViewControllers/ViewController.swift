@@ -5,7 +5,7 @@ class ViewController: UIViewController {
 	let fileProvider: FileProviderProtocol = FileProvider()
 	let storageProvider:StorageProviderProtocol = StorageProvider()
 	let defaultImage = UIImage(named: "defultImage")
-	var tableView: UITableView!
+	let tableView: CustomTableViewProtocol = CustomTableView()
 	var urls: [String] = [
 		"https://i.pinimg.com/originals/b3/c2/ff/b3c2ff8bcfad7ad8b6af0ceb99ffc7ef.jpg",
 		"https://i.pinimg.com/originals/83/1d/95/831d95692a6441c47de359701bbb9933.jpg",
@@ -27,20 +27,7 @@ class ViewController: UIViewController {
 		storageProvider.freeStorage(urls: urls)
 		super.viewDidLoad()
 		view.backgroundColor = .white
-		tableView = UITableView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-		tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "cell")
-		tableView.delegate = self
-		tableView.dataSource = self
-		tableView.tableFooterView = UIView()
-		self.view.addSubview(tableView)
-		tableView.reloadData()
-		tableView.translatesAutoresizingMaskIntoConstraints = false
-		NSLayoutConstraint.activate([
-			tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: -50),
-			tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 50),
-			tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
-			tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0)
-		])
+		tableView.setTableView(viewController: self)
 	}
 
 }

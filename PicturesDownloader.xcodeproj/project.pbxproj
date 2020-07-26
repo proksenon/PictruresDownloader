@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5121D0924CD6F9200789A93 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0824CD6F9200789A93 /* CustomTableView.swift */; };
+		D5121D0B24CD716900789A93 /* CustomTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0A24CD716900789A93 /* CustomTableViewProtocol.swift */; };
 		D52E992E24BF4AE2001B50EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E992D24BF4AE2001B50EA /* AppDelegate.swift */; };
 		D52E993024BF4AE2001B50EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E992F24BF4AE2001B50EA /* SceneDelegate.swift */; };
 		D52E993224BF4AE2001B50EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E993124BF4AE2001B50EA /* ViewController.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5121D0824CD6F9200789A93 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		D5121D0A24CD716900789A93 /* CustomTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewProtocol.swift; sourceTree = "<group>"; };
 		D52E992A24BF4AE2001B50EA /* PicturesDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicturesDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52E992D24BF4AE2001B50EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D52E992F24BF4AE2001B50EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				D5D850DB24C8460B005415CB /* Proocols */,
 				D52E996024BF63D6001B50EA /* ImageProvider.swift */,
 				D52E996224C06742001B50EA /* FileProvider.swift */,
+				D5121D0824CD6F9200789A93 /* CustomTableView.swift */,
 				D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */,
 				D52E996624C19715001B50EA /* ImageResizer.swift */,
 				D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */,
@@ -199,6 +204,7 @@
 			children = (
 				D5D850DE24C8469D005415CB /* ImageResizerProtocol.swift */,
 				D5D850E024C84730005415CB /* ImageNameManagerProtocol.swift */,
+				D5121D0A24CD716900789A93 /* CustomTableViewProtocol.swift */,
 				D5D850E224C847DF005415CB /* FileProviderProtocol.swift */,
 				D5D850E424C84831005415CB /* ImageProviderProtocol.swift */,
 				D5D850E624C84878005415CB /* NetworkServiceProtocol.swift */,
@@ -364,11 +370,13 @@
 				D54D184B24C83CF20059AE9D /* CGSizeStringExtension.swift in Sources */,
 				D52E996124BF63D6001B50EA /* ImageProvider.swift in Sources */,
 				D54D184824C83BF90059AE9D /* UIImageResizeExtension.swift in Sources */,
+				D5121D0924CD6F9200789A93 /* CustomTableView.swift in Sources */,
 				D52E997124C74E53001B50EA /* ImageView.swift in Sources */,
 				D52E996B24C1EFCD001B50EA /* ImageNameManager.swift in Sources */,
 				D52E993224BF4AE2001B50EA /* ViewController.swift in Sources */,
 				D5D850E124C84730005415CB /* ImageNameManagerProtocol.swift in Sources */,
 				D54D184624C827030059AE9D /* ViewControllerWorkTableExtension.swift in Sources */,
+				D5121D0B24CD716900789A93 /* CustomTableViewProtocol.swift in Sources */,
 				D5D850E724C84878005415CB /* NetworkServiceProtocol.swift in Sources */,
 				D5D850E524C84831005415CB /* ImageProviderProtocol.swift in Sources */,
 				D52E992E24BF4AE2001B50EA /* AppDelegate.swift in Sources */,
