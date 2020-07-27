@@ -9,5 +9,6 @@
 import Foundation
 
 protocol StorageProviderProtocol {
-	func freeStorage(urls: [String])
+	func freeStorage(befora date: Date?)
+	func freeALL(urls: [String])
 }

@@ -20,7 +20,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 			activity.stopActivity()
 			}
 
-
 		return cell
 	}
 
@@ -38,4 +37,3 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 		self.present(nextVC, animated: false)
 	}
 }
-

@@ -52,25 +52,34 @@ final class FileProvider: FileProviderProtocol {
 		return nil
 	}
 
-	func removeFile(nameFile: String) {
+	private func removeFile(nameFile: String, before date: Date? = Date()) {
         do {
 			let path = (tempDirectory as NSString).appendingPathComponent(nameFile)
-			try fileManager.removeItem(atPath: path)
-            print("file deleted")
+			let dateFile = try fileManager.attributesOfItem(atPath: path)[FileAttributeKey.creationDate] as! Date
+			let sizeFile = try fileManager.attributesOfItem(atPath: path)[FileAttributeKey.size] as! Int
+			if let date = date {
+				if date > dateFile || sizeFile > 1000000 {
+					try fileManager.removeItem(atPath: path)
+					print("file deleted")
+				}
+			} else {
+				try fileManager.removeItem(atPath: path)
+				print("file deleted")
+			}
         } catch let error as NSError {
             print("error occured while deleting file: \(error.localizedDescription)")
         }
 	}
 
-	func removeAllFiles() {
+	func removeAllFiles(before date: Date? = Date()) {
 		do {
 			let filesInDirectory = try fileManager.contentsOfDirectory(atPath: tempDirectory)
 			for file in filesInDirectory {
-				removeFile(nameFile: file)
+				removeFile(nameFile: file, before: date)
 			}
 		} catch let error as NSError {
             print("error occured while deleting file: \(error.localizedDescription)")
         }
-
 	}
+
 }

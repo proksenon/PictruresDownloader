@@ -10,15 +10,15 @@ import Foundation
 
 final class StorageProvider: StorageProviderProtocol {
 	let fileProvider: FileProviderProtocol = FileProvider()
+	let userDefaultsWork = UserDefaultsWork()
 
-	func freeStorage(urls: [String]){
-		fileProvider.removeAllFiles()
-		removeUserDefaults(urls: urls)
+	func freeStorage(befora date: Date? = Calendar.current.date(byAdding: .day, value: -2, to: Date())){
+		fileProvider.removeAllFiles(before: date)
 	}
-	private func removeUserDefaults(urls: [String]) {
-		for url in urls {
-			UserDefaults.standard.removeObject(forKey: url)
-			UserDefaults.standard.synchronize()
-		}
+
+	func freeALL(urls: [String]) {
+		fileProvider.removeAllFiles(before: nil)
+		userDefaultsWork.removeObjects(urls: urls)
 	}
+
 }

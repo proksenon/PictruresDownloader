@@ -6,6 +6,7 @@ class ImageView: UIView {
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+//		imageView.contentMode = .center
 		self.addSubview(imageView)
 		setupImageViewConstraints()
 	}
@@ -15,10 +16,15 @@ class ImageView: UIView {
 	}
 
 	func setupImageViewConstraints() {
-		imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-		imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 		imageView.translatesAutoresizingMaskIntoConstraints = false
-		imageView.sizeToFit()
+		imageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+		imageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+		imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+		imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+//		imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+//		imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+//		imageView.translatesAutoresizingMaskIntoConstraints = false
+//		imageView.sizeToFit()
 	}
 
 }

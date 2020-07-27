@@ -5,6 +5,7 @@ final class ImageProvider: ImageProviderProtocol {
 	let fileProvider: FileProviderProtocol
 	let imageNameManager: ImageNameManagerProtocol
 	let imageResizer: ImageResizerProtocol
+	let defaultImage = UIImage(named: "defultImage")
 
 	init(networkService: NetworkServiceProtocol = NetworkService(),
 		 fileProvider: FileProviderProtocol = FileProvider(),
@@ -22,7 +23,7 @@ final class ImageProvider: ImageProviderProtocol {
 			let nameFile = imageNameManager.getNameFileImage(url: url, size: size)
 			if fileProvider.checkDirectory(nameFile: nameFile) {
 				if let data = fileProvider.readFile(nameFile: nameFile) {
-					completion (UIImage(data: data))
+					completion(UIImage(data: data))
 				}
 			} else {
 				originalToSize(url: url, nameFile: nameFile, size: size) { (image) in
@@ -32,26 +33,27 @@ final class ImageProvider: ImageProviderProtocol {
 		} else {
 			if let currentUrl = URL(string: url) {
 				networkService.getData(url: currentUrl) { (data) in
-					let path = self.fileProvider.createFile(url: url, nameFile: nameFileOrigin)
-					print(path)
-					self.fileProvider.writeToFile(data: data, path: path)
+					self.dataToFile(url: url, nameFile: nameFileOrigin, data: data)
 					let nameFile = self.imageNameManager.getNameFileImage(url: url, size: size)
 					self.originalToSize(url: url, nameFile: nameFile, size: size) { (image) in
-						if let image = image {
-							completion(image)
-						}
+						completion(image)
 					}
 				}
 			}
 		}
 	}
 
+	private func dataToFile(url: String, nameFile: String, data: Data) {
+		let path = self.fileProvider.createFile(url: url, nameFile: nameFile)
+		print(path)
+		self.fileProvider.writeToFile(data: data, path: path)
+	}
+
 	private func originalToSize(url: String, nameFile: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
 		if let data = fileProvider.readFile(nameFile: imageNameManager.getNameFileImage(url: url, size: nil)) {
 			if let newData = imageResizer.imageToSize(nameFile: nameFile, size: size, data: data) {
 				completion (UIImage(data: newData))
-				let path = self.fileProvider.createFile(url: url, nameFile: nameFile)
-				self.fileProvider.writeToFile(data: newData, path: path)
+				dataToFile(url: url, nameFile: nameFile, data: newData)
 			} else {
 				completion (UIImage(data: data))
 			}
