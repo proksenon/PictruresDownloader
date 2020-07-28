@@ -3,34 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0123DA73253BA0AF45AB1CB25AC88709 /* Pods-PicturesDownloaderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F915DCAF2CCC375535793DE7D5267 /* Pods-PicturesDownloaderTests-dummy.m */; };
-		05A10C400B5FF02792B3BBC9F881795C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		05DD1F85FBD114781F16BB9048435056 /* Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1AFE3C8941B40C8BB68663C1AF9542 /* Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m */; };
-		1DA384FB7CDA6A89664EFC29290F51FC /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 799E797A23867F22A3D1BDF15CFF9650 /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		275ABEB51B3E6CFB1F99DC846CF08578 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B6EC114A39578F18C4BC4ECF28F2BF /* RNCryptor.swift */; };
+		1DA384FB7CDA6A89664EFC29290F51FC /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E15CB358CA1E43940997B8F4FD5815A8 /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		275ABEB51B3E6CFB1F99DC846CF08578 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF63392BE80C467485BB61E64B823D7 /* RNCryptor.swift */; };
+		320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124585FE4192A16BF6F2D66310CDCB80 /* TegKeychainConstants.swift */; };
 		36AC8E4868BD5C97410702782309235B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6E87BAD703EF04D064B5CA6D14B2EC /* KeychainSwiftAccessOptions.swift */; };
+		4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7193DE40C08CA5D2144F0CE3274BD8B8 /* KeychainSwift-dummy.m */; };
+		4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B976EF496602CA31E243D3F6A31A072C /* KeychainSwift.swift */; };
 		51170BA71D79DCDD3C2D9B6B650167BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6820B3638809F3914194216BB5A3C2A2 /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E5018ED51913B2EA440EE821F2810E /* RNCryptor-dummy.m */; };
-		8A917F1727AD517CE2A40AECF83D9213 /* Pods-PicturesDownloader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD5F4062585D10EAF2639657431813DD /* Pods-PicturesDownloader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D5F1DF172BC136BA78BAC7DF4A1DC6E /* Pods-PicturesDownloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC86AF47CF03A04034370D5E91E7BC /* Pods-PicturesDownloader-dummy.m */; };
+		6820B3638809F3914194216BB5A3C2A2 /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8850F8A654556B59D4B4CC504551B14A /* RNCryptor-dummy.m */; };
+		74DDBF47539EB98680E83BD95227DD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8B023C120462DD86F5F71B978A7743B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		92AB7DBA672F2E4686A9125DCAA1F527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A12DE04EC050E76D443C53DBB38D2402 /* Pods-PicturesDownloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DECC86AF47CF03A04034370D5E91E7BC /* Pods-PicturesDownloader-dummy.m */; };
+		A8A9426E5811F2C85817F14558A5905E /* Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FDDE81CA5AA70E5ECE2124F02219E8 /* Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B660F48756286C3F149FFAF49721F97B /* Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1AFE3C8941B40C8BB68663C1AF9542 /* Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m */; };
 		BB0435EFA22C2DA042422D829C9FB49F /* Pods-PicturesDownloaderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B48BA6CABA8272ECEC1677446DA4C011 /* Pods-PicturesDownloaderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDFE634DF2F9CBC5C033955B62A51B44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FB253266650056F48387E8287E085E92 /* Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FDDE81CA5AA70E5ECE2124F02219E8 /* Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B09193280A64780B48883761F52EC0A /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF3BD2F29A8CCFF0C548294A38A994DD /* Pods-PicturesDownloader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD5F4062585D10EAF2639657431813DD /* Pods-PicturesDownloader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2635F8E153280A827ABA86C7163E3475 /* PBXContainerItemProxy */ = {
+		0CE3E540969D5AE722F93D6D00D863AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+		34109E84C5FA83765A0A99D4969B84B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+		36C5E5A2FD56847B5711CC0EE7A30DA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 05CCA2AD142519DF6FED0979BACBC149;
 			remoteInfo = RNCryptor;
 		};
-		CB5B5BA6FFAB676299AE06ED5BD5FED5 /* PBXContainerItemProxy */ = {
+		D8468791C9122C6253BC0DA85EB7E9D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -48,30 +68,37 @@
 
 /* Begin PBXFileReference section */
 		006F915DCAF2CCC375535793DE7D5267 /* Pods-PicturesDownloaderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PicturesDownloaderTests-dummy.m"; sourceTree = "<group>"; };
-		0175A22FF546DEA7C81ADB08CD69A47A /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RNCryptor.modulemap; sourceTree = "<group>"; };
 		09244CAE10F78F16CC7E1180C47A9425 /* Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0B09193280A64780B48883761F52EC0A /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		124585FE4192A16BF6F2D66310CDCB80 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
 		14466663597F7C9F594FFF2D60B7C140 /* Pods-PicturesDownloaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicturesDownloaderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1876A9EE3145458FC9242D230646B967 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
-		18C5C8FB225B22DAAAFE544F04F1054A /* RNCryptor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.release.xcconfig; sourceTree = "<group>"; };
 		250935625E5AA3ABA5B79B3C901755FD /* Pods-PicturesDownloader-PicturesDownloaderUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicturesDownloader-PicturesDownloaderUITests-frameworks.sh"; sourceTree = "<group>"; };
+		27FE8F55066CFEEB31EC31DAB154900C /* RNCryptor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.debug.xcconfig; sourceTree = "<group>"; };
 		2E1AFE3C8941B40C8BB68663C1AF9542 /* Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		430DFAEA95D9265B33560B085CFD6B09 /* Pods-PicturesDownloader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicturesDownloader-frameworks.sh"; sourceTree = "<group>"; };
 		4C64E917B37E3255B63E27947C7BAAA1 /* Pods_PicturesDownloaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PicturesDownloaderTests.framework; path = "Pods-PicturesDownloaderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		534282BE88C9BF0BA2ED74BA7130AEA3 /* RNCryptor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.debug.xcconfig; sourceTree = "<group>"; };
 		546B53CB2B2BAB96E3F82280C2544163 /* Pods-PicturesDownloader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PicturesDownloader.modulemap"; sourceTree = "<group>"; };
 		589A14B325F3D68CEA44D5AC2A5049C8 /* Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		73B6EC114A39578F18C4BC4ECF28F2BF /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RNCryptor.swift; path = Sources/RNCryptor/RNCryptor.swift; sourceTree = "<group>"; };
+		5E6E87BAD703EF04D064B5CA6D14B2EC /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		7193DE40C08CA5D2144F0CE3274BD8B8 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
 		77209756F2BDC0BDC0901042D6AE179D /* Pods-PicturesDownloader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicturesDownloader-acknowledgements.plist"; sourceTree = "<group>"; };
-		799E797A23867F22A3D1BDF15CFF9650 /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
+		777FA23F9B03656FBE8FD03D486821E6 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
 		7CBBB82371C2327998D9A3D99111EF9F /* Pods-PicturesDownloaderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicturesDownloaderTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8850F8A654556B59D4B4CC504551B14A /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
 		90901FB0133A99955DB845A9AF5D02B4 /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PicturesDownloader_PicturesDownloaderUITests.framework; path = "Pods-PicturesDownloader-PicturesDownloaderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91A20A4B47C4D8DCF44EEAFD7C4BDE06 /* RNCryptor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RNCryptor-Info.plist"; sourceTree = "<group>"; };
+		94F4A8FD01781F3596706603AF8223F3 /* RNCryptor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RNCryptor-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFC846C2347448397665EF3E91A893B /* Pods-PicturesDownloader-PicturesDownloaderUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicturesDownloader-PicturesDownloaderUITests-Info.plist"; sourceTree = "<group>"; };
 		AC9F95E119E71BE3616F06190DCFD14A /* Pods-PicturesDownloaderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PicturesDownloaderTests.modulemap"; sourceTree = "<group>"; };
+		B05CA429B8F1DE3DEBA4ECF32FF60CC1 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
 		B48BA6CABA8272ECEC1677446DA4C011 /* Pods-PicturesDownloaderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PicturesDownloaderTests-umbrella.h"; sourceTree = "<group>"; };
+		B7E91033AA2FB40C9AFC221046EC2DD3 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		B976EF496602CA31E243D3F6A31A072C /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
 		C0F858AF9F8067FB557FA50069502788 /* Pods-PicturesDownloader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicturesDownloader-Info.plist"; sourceTree = "<group>"; };
+		C45019D6F665799A86F191D410418962 /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
+		C741EA5B2CDE34155CA4DCF257C4D37C /* RNCryptor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.release.xcconfig; sourceTree = "<group>"; };
 		C7C2A586EE250F0A88F333EB7BD309AF /* Pods-PicturesDownloaderTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicturesDownloaderTests-Info.plist"; sourceTree = "<group>"; };
 		C8FDDE81CA5AA70E5ECE2124F02219E8 /* Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h"; sourceTree = "<group>"; };
 		C9DF3C026625213207591C876225B172 /* Pods_PicturesDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PicturesDownloader.framework; path = "Pods-PicturesDownloader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,8 +106,12 @@
 		CDF3B98CDA95070C4C4C96F99FD1E8BE /* Pods-PicturesDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicturesDownloader.release.xcconfig"; sourceTree = "<group>"; };
 		D463DBD5812B750FADEAF7614ED6FA9D /* Pods-PicturesDownloaderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PicturesDownloaderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D7503043FEDDCE338FB52926B2F6B5A0 /* Pods-PicturesDownloader-PicturesDownloaderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicturesDownloader-PicturesDownloaderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DAA72118F020908CEC5E8E7F752A9DE2 /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
+		DB4F78B9B99276C662FC825FDE5C85CD /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RNCryptor.modulemap; sourceTree = "<group>"; };
 		DECC86AF47CF03A04034370D5E91E7BC /* Pods-PicturesDownloader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PicturesDownloader-dummy.m"; sourceTree = "<group>"; };
-		E0E5018ED51913B2EA440EE821F2810E /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
+		DF1E48AB9D1C7CFF4EE0D2012CBC85CF /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
+		DFF63392BE80C467485BB61E64B823D7 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RNCryptor.swift; path = Sources/RNCryptor/RNCryptor.swift; sourceTree = "<group>"; };
+		E15CB358CA1E43940997B8F4FD5815A8 /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
 		F016CDF4803BE271BB2E2F5AC75AFD4D /* Pods-PicturesDownloader-PicturesDownloaderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PicturesDownloader-PicturesDownloaderUITests.modulemap"; sourceTree = "<group>"; };
 		F0F6913CE567D91927A2A30A7C2E68F9 /* Pods-PicturesDownloader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PicturesDownloader-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F3E40E5D815FF2866DFA350D6AC78FB6 /* Pods-PicturesDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicturesDownloader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,19 +121,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72CC1FFB4622C417DC0F19214C6A8CBA /* Frameworks */ = {
+		4A2A9F195399A771D5E644536E9F6CF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFE634DF2F9CBC5C033955B62A51B44 /* Foundation.framework in Frameworks */,
+				74DDBF47539EB98680E83BD95227DD8D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A502F475ADB16B0706D9CC90722AF7BA /* Frameworks */ = {
+		5FAB0FD310208FBEAC6F38BA1F066020 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A10C400B5FF02792B3BBC9F881795C /* Foundation.framework in Frameworks */,
+				8B023C120462DD86F5F71B978A7743B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5307D31170CD7F949E50347AEB9BAB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AB7DBA672F2E4686A9125DCAA1F527 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,17 +164,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		050B7189C65D4C8198DCA2257017C0B0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9DF3C026625213207591C876225B172 /* Pods_PicturesDownloader.framework */,
-				90901FB0133A99955DB845A9AF5D02B4 /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework */,
-				4C64E917B37E3255B63E27947C7BAAA1 /* Pods_PicturesDownloaderTests.framework */,
-				F6320389F628433B78C81FB217A0485D /* RNCryptor.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		17FBE82A85CD5FBC97C9E8A1E1522861 /* Pods-PicturesDownloader */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +181,15 @@
 			path = "Target Support Files/Pods-PicturesDownloader";
 			sourceTree = "<group>";
 		};
+		182AB421F12A0F9EA8BDA6FD5A3E0148 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AF017DFE1A9F25C42D2ED2AA6A95DA9 /* KeychainSwift */,
+				8CD0C6331D275F04C1512091725842A4 /* RNCryptor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1F21033CEF81B54FA0443EFA928F429E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,22 +200,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		25D1484E429523CA28F4C4B310DF32B6 /* Pods */ = {
+		417A40FBDF331A5538F59127507097F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2DEE78A83A3E6878B4E6F6867833EAC4 /* RNCryptor */,
+				9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */,
+				C9DF3C026625213207591C876225B172 /* Pods_PicturesDownloader.framework */,
+				90901FB0133A99955DB845A9AF5D02B4 /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework */,
+				4C64E917B37E3255B63E27947C7BAAA1 /* Pods_PicturesDownloaderTests.framework */,
+				F6320389F628433B78C81FB217A0485D /* RNCryptor.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		2DEE78A83A3E6878B4E6F6867833EAC4 /* RNCryptor */ = {
-			isa = PBXGroup;
-			children = (
-				73B6EC114A39578F18C4BC4ECF28F2BF /* RNCryptor.swift */,
-				BF7E96187ACF3CB82D921B1B17C35CEA /* Support Files */,
-			);
-			name = RNCryptor;
-			path = RNCryptor;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		46DD3B766F6D24E29A2DCBD5E29A99DF /* Pods-PicturesDownloaderTests */ = {
@@ -195,6 +226,58 @@
 			);
 			name = "Pods-PicturesDownloaderTests";
 			path = "Target Support Files/Pods-PicturesDownloaderTests";
+			sourceTree = "<group>";
+		};
+		55829C065C6EAC86F29161692BD30B61 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				777FA23F9B03656FBE8FD03D486821E6 /* KeychainSwift.modulemap */,
+				7193DE40C08CA5D2144F0CE3274BD8B8 /* KeychainSwift-dummy.m */,
+				DF1E48AB9D1C7CFF4EE0D2012CBC85CF /* KeychainSwift-Info.plist */,
+				B7E91033AA2FB40C9AFC221046EC2DD3 /* KeychainSwift-prefix.pch */,
+				0B09193280A64780B48883761F52EC0A /* KeychainSwift-umbrella.h */,
+				C45019D6F665799A86F191D410418962 /* KeychainSwift.debug.xcconfig */,
+				DAA72118F020908CEC5E8E7F752A9DE2 /* KeychainSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainSwift";
+			sourceTree = "<group>";
+		};
+		7A921D451FFCF2C6E8E80FC6E473C9F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB4F78B9B99276C662FC825FDE5C85CD /* RNCryptor.modulemap */,
+				8850F8A654556B59D4B4CC504551B14A /* RNCryptor-dummy.m */,
+				94F4A8FD01781F3596706603AF8223F3 /* RNCryptor-Info.plist */,
+				B05CA429B8F1DE3DEBA4ECF32FF60CC1 /* RNCryptor-prefix.pch */,
+				E15CB358CA1E43940997B8F4FD5815A8 /* RNCryptor-umbrella.h */,
+				27FE8F55066CFEEB31EC31DAB154900C /* RNCryptor.debug.xcconfig */,
+				C741EA5B2CDE34155CA4DCF257C4D37C /* RNCryptor.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RNCryptor";
+			sourceTree = "<group>";
+		};
+		8CD0C6331D275F04C1512091725842A4 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				DFF63392BE80C467485BB61E64B823D7 /* RNCryptor.swift */,
+				7A921D451FFCF2C6E8E80FC6E473C9F1 /* Support Files */,
+			);
+			name = RNCryptor;
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		9AF017DFE1A9F25C42D2ED2AA6A95DA9 /* KeychainSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B976EF496602CA31E243D3F6A31A072C /* KeychainSwift.swift */,
+				5E6E87BAD703EF04D064B5CA6D14B2EC /* KeychainSwiftAccessOptions.swift */,
+				124585FE4192A16BF6F2D66310CDCB80 /* TegKeychainConstants.swift */,
+				55829C065C6EAC86F29161692BD30B61 /* Support Files */,
+			);
+			name = KeychainSwift;
+			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
 		B914E320D7E3A65F4C25F3C013137CC0 /* Pods-PicturesDownloader-PicturesDownloaderUITests */ = {
@@ -214,21 +297,6 @@
 			path = "Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests";
 			sourceTree = "<group>";
 		};
-		BF7E96187ACF3CB82D921B1B17C35CEA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0175A22FF546DEA7C81ADB08CD69A47A /* RNCryptor.modulemap */,
-				E0E5018ED51913B2EA440EE821F2810E /* RNCryptor-dummy.m */,
-				91A20A4B47C4D8DCF44EEAFD7C4BDE06 /* RNCryptor-Info.plist */,
-				1876A9EE3145458FC9242D230646B967 /* RNCryptor-prefix.pch */,
-				799E797A23867F22A3D1BDF15CFF9650 /* RNCryptor-umbrella.h */,
-				534282BE88C9BF0BA2ED74BA7130AEA3 /* RNCryptor.debug.xcconfig */,
-				18C5C8FB225B22DAAAFE544F04F1054A /* RNCryptor.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RNCryptor";
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,8 +310,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				25D1484E429523CA28F4C4B310DF32B6 /* Pods */,
-				050B7189C65D4C8198DCA2257017C0B0 /* Products */,
+				182AB421F12A0F9EA8BDA6FD5A3E0148 /* Pods */,
+				417A40FBDF331A5538F59127507097F9 /* Products */,
 				1F21033CEF81B54FA0443EFA928F429E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -267,11 +335,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62A428E204407E2307E3B01BBAAE50FC /* Headers */ = {
+		3377159A2CDD95D3211CB8E55DD422AB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB253266650056F48387E8287E085E92 /* Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h in Headers */,
+				A8A9426E5811F2C85817F14558A5905E /* Pods-PicturesDownloader-PicturesDownloaderUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7F22B5CB0634E4ABC954530407398B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3BD2F29A8CCFF0C548294A38A994DD /* Pods-PicturesDownloader-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +359,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA1A55D6AC8BD4CE98718181DBFC361B /* Headers */ = {
+		97BD77ADDCAB6FA6CF7529B5308B0918 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A917F1727AD517CE2A40AECF83D9213 /* Pods-PicturesDownloader-umbrella.h in Headers */,
+				C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,19 +388,38 @@
 			productReference = F6320389F628433B78C81FB217A0485D /* RNCryptor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		77777B431648331D6858A82C451F1E8D /* Pods-PicturesDownloader-PicturesDownloaderUITests */ = {
+		07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858EA664C78C04AC2C4EF01934971EB5 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader-PicturesDownloaderUITests" */;
+			buildConfigurationList = B6B334E2C50C2C0C66D96CADAEE2EA01 /* Build configuration list for PBXNativeTarget "KeychainSwift" */;
 			buildPhases = (
-				62A428E204407E2307E3B01BBAAE50FC /* Headers */,
-				1A7B590EE7D4044FF5E3EFE88D50EA1C /* Sources */,
-				A502F475ADB16B0706D9CC90722AF7BA /* Frameworks */,
-				A9B4E45E605AE58E8671D0FDC5C934B8 /* Resources */,
+				97BD77ADDCAB6FA6CF7529B5308B0918 /* Headers */,
+				E3B35C6F6E358284C831471583BD04CD /* Sources */,
+				4A2A9F195399A771D5E644536E9F6CF4 /* Frameworks */,
+				29186A7FC9690C20BDE41949C4FFD3AC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C21021265A8F97177F391ADA67565750 /* PBXTargetDependency */,
+			);
+			name = KeychainSwift;
+			productName = KeychainSwift;
+			productReference = 9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77777B431648331D6858A82C451F1E8D /* Pods-PicturesDownloader-PicturesDownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC46586F044E9773C3199FFF3AA0E43 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader-PicturesDownloaderUITests" */;
+			buildPhases = (
+				3377159A2CDD95D3211CB8E55DD422AB /* Headers */,
+				2A5442FD4B7C7024BDADC928322CA3B0 /* Sources */,
+				B5307D31170CD7F949E50347AEB9BAB4 /* Frameworks */,
+				1DB4D7FC39594973801AF62FBB5E3298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83943793432816A9D13C9CF1758CCCE7 /* PBXTargetDependency */,
+				71BE49BDB71BF52BD8BD135C75A8C603 /* PBXTargetDependency */,
 			);
 			name = "Pods-PicturesDownloader-PicturesDownloaderUITests";
 			productName = "Pods-PicturesDownloader-PicturesDownloaderUITests";
@@ -333,17 +428,18 @@
 		};
 		A0E8EE357E8A0BB9A24028E5B49C44F6 /* Pods-PicturesDownloader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D3B6F74D4E6AAF00038A30EA37BD9F9 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader" */;
+			buildConfigurationList = 9219BD319E2CDD4DAFEC70F64C6476D8 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader" */;
 			buildPhases = (
-				DA1A55D6AC8BD4CE98718181DBFC361B /* Headers */,
-				F15A336FDA899DB1316C68012286FF17 /* Sources */,
-				72CC1FFB4622C417DC0F19214C6A8CBA /* Frameworks */,
-				29D282996676A901A0F8B324F05324EE /* Resources */,
+				5E7F22B5CB0634E4ABC954530407398B /* Headers */,
+				C300717F4751BDC4D2B7A7A8502B0E4C /* Sources */,
+				5FAB0FD310208FBEAC6F38BA1F066020 /* Frameworks */,
+				26DC51CE0049D96CE0360382AC38C28A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B68A95C491A7DDAC082995E3B1B0C5DB /* PBXTargetDependency */,
+				E6D80445CB597A9DF6645B8572654C2B /* PBXTargetDependency */,
+				B50AE1F471A057368DDEDD4BC1BF3E27 /* PBXTargetDependency */,
 			);
 			name = "Pods-PicturesDownloader";
 			productName = "Pods-PicturesDownloader";
@@ -379,7 +475,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -387,10 +483,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 050B7189C65D4C8198DCA2257017C0B0 /* Products */;
+			productRefGroup = 417A40FBDF331A5538F59127507097F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */,
 				A0E8EE357E8A0BB9A24028E5B49C44F6 /* Pods-PicturesDownloader */,
 				77777B431648331D6858A82C451F1E8D /* Pods-PicturesDownloader-PicturesDownloaderUITests */,
 				B65CDB5B40ECD17995F3580125016342 /* Pods-PicturesDownloaderTests */,
@@ -400,7 +497,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		29D282996676A901A0F8B324F05324EE /* Resources */ = {
+		1DB4D7FC39594973801AF62FBB5E3298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26DC51CE0049D96CE0360382AC38C28A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29186A7FC9690C20BDE41949C4FFD3AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,13 +532,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9B4E45E605AE58E8671D0FDC5C934B8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -439,11 +543,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A7B590EE7D4044FF5E3EFE88D50EA1C /* Sources */ = {
+		2A5442FD4B7C7024BDADC928322CA3B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DD1F85FBD114781F16BB9048435056 /* Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m in Sources */,
+				B660F48756286C3F149FFAF49721F97B /* Pods-PicturesDownloader-PicturesDownloaderUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C300717F4751BDC4D2B7A7A8502B0E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12DE04EC050E76D443C53DBB38D2402 /* Pods-PicturesDownloader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B35C6F6E358284C831471583BD04CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */,
+				4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */,
+				485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */,
+				320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,28 +579,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F15A336FDA899DB1316C68012286FF17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D5F1DF172BC136BA78BAC7DF4A1DC6E /* Pods-PicturesDownloader-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B68A95C491A7DDAC082995E3B1B0C5DB /* PBXTargetDependency */ = {
+		71BE49BDB71BF52BD8BD135C75A8C603 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RNCryptor;
 			target = 05CCA2AD142519DF6FED0979BACBC149 /* RNCryptor */;
-			targetProxy = 2635F8E153280A827ABA86C7163E3475 /* PBXContainerItemProxy */;
+			targetProxy = 36C5E5A2FD56847B5711CC0EE7A30DA0 /* PBXContainerItemProxy */;
 		};
-		C21021265A8F97177F391ADA67565750 /* PBXTargetDependency */ = {
+		83943793432816A9D13C9CF1758CCCE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = 0CE3E540969D5AE722F93D6D00D863AE /* PBXContainerItemProxy */;
+		};
+		B50AE1F471A057368DDEDD4BC1BF3E27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RNCryptor;
 			target = 05CCA2AD142519DF6FED0979BACBC149 /* RNCryptor */;
-			targetProxy = CB5B5BA6FFAB676299AE06ED5BD5FED5 /* PBXContainerItemProxy */;
+			targetProxy = D8468791C9122C6253BC0DA85EB7E9D3 /* PBXContainerItemProxy */;
 		};
 		C93A07A067B6BD466AB2C5FAFF08ACA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -485,14 +606,19 @@
 			target = A0E8EE357E8A0BB9A24028E5B49C44F6 /* Pods-PicturesDownloader */;
 			targetProxy = F05C2DF9459935996366337B0EE1D0F3 /* PBXContainerItemProxy */;
 		};
+		E6D80445CB597A9DF6645B8572654C2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = 34109E84C5FA83765A0A99D4969B84B4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		027B0E1B9F512E09E3342DA1FCF51C94 /* Debug */ = {
+		1F2F5BDAADEE4BA4A4D19C5A590ECE1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 589A14B325F3D68CEA44D5AC2A5049C8 /* Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig */;
+			baseConfigurationReference = DAA72118F020908CEC5E8E7F752A9DE2 /* KeychainSwift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -502,28 +628,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		3826D5714E378DC85CA283CBAACB30C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -562,11 +688,10 @@
 			};
 			name = Debug;
 		};
-		455299E118B8E212C474D9E24744BD7B /* Debug */ = {
+		484033624D954C134B63F540BA990534 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3E40E5D815FF2866DFA350D6AC78FB6 /* Pods-PicturesDownloader.debug.xcconfig */;
+			baseConfigurationReference = C45019D6F665799A86F191D410418962 /* KeychainSwift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -576,30 +701,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		4928BF512E14DB75D7E62FD0F6318C77 /* Release */ = {
+		5980D5166D216EB64916CCBF7653D827 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09244CAE10F78F16CC7E1180C47A9425 /* Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig */;
 			buildSettings = {
@@ -639,7 +763,7 @@
 		};
 		7CA5C8FFC46FFCF7A1668944A693C7B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C5C8FB225B22DAAAFE544F04F1054A /* RNCryptor.release.xcconfig */;
+			baseConfigurationReference = C741EA5B2CDE34155CA4DCF257C4D37C /* RNCryptor.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -672,6 +796,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		886E39AA8A12A59534ADAA3F2330F94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589A14B325F3D68CEA44D5AC2A5049C8 /* Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -797,9 +958,46 @@
 			};
 			name = Debug;
 		};
+		9E4C44714C86C2384BE9E90BEF46A55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E40E5D815FF2866DFA350D6AC78FB6 /* Pods-PicturesDownloader.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CE73D6CD1C3896EA28C80C06CEFD5FE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 534282BE88C9BF0BA2ED74BA7130AEA3 /* RNCryptor.debug.xcconfig */;
+			baseConfigurationReference = 27FE8F55066CFEEB31EC31DAB154900C /* RNCryptor.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -831,44 +1029,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		D20E6A0D2C22F76F22D2E54580825672 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDF3B98CDA95070C4C4C96F99FD1E8BE /* Pods-PicturesDownloader.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		DC52806FB20F52CDD2C841F62E92DCC3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -908,18 +1068,47 @@
 			};
 			name = Release;
 		};
+		F874A943D78AA09CFA755507F1988EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF3B98CDA95070C4C4C96F99FD1E8BE /* Pods-PicturesDownloader.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D3B6F74D4E6AAF00038A30EA37BD9F9 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				455299E118B8E212C474D9E24744BD7B /* Debug */,
-				D20E6A0D2C22F76F22D2E54580825672 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		244C8495B4807405AC4E43E3331BC3A5 /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -938,11 +1127,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858EA664C78C04AC2C4EF01934971EB5 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader-PicturesDownloaderUITests" */ = {
+		9219BD319E2CDD4DAFEC70F64C6476D8 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				027B0E1B9F512E09E3342DA1FCF51C94 /* Debug */,
-				4928BF512E14DB75D7E62FD0F6318C77 /* Release */,
+				9E4C44714C86C2384BE9E90BEF46A55A /* Debug */,
+				F874A943D78AA09CFA755507F1988EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC46586F044E9773C3199FFF3AA0E43 /* Build configuration list for PBXNativeTarget "Pods-PicturesDownloader-PicturesDownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				886E39AA8A12A59534ADAA3F2330F94E /* Debug */,
+				5980D5166D216EB64916CCBF7653D827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -952,6 +1150,15 @@
 			buildConfigurations = (
 				3826D5714E378DC85CA283CBAACB30C5 /* Debug */,
 				DC52806FB20F52CDD2C841F62E92DCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B334E2C50C2C0C66D96CADAEE2EA01 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484033624D954C134B63F540BA990534 /* Debug */,
+				1F2F5BDAADEE4BA4A4D19C5A590ECE1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

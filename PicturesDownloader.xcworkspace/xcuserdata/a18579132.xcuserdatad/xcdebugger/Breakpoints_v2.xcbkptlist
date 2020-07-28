@@ -3,4 +3,70 @@
    uuid = "3342F86C-90AA-4962-AD55-D6C1210A02CA"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90B810CD-BF27-4F84-B5FF-057032AD2E0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PicturesDownloader/ImageProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "loadImages(urls:size:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2CF0C76-E409-4385-9B99-B7A9896B525E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PicturesDownloader/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2CF0C76-E409-4385-9B99-B7A9896B525E - c5bb669e6a6b80d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PicturesDownloader.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "PicturesDownloader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a18579132/Desktop/NeedConstraints/PicturesDownloader/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "915">
+               </Location>
+               <Location
+                  uuid = "C2CF0C76-E409-4385-9B99-B7A9896B525E - 596ed221c2e3f4c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in PicturesDownloader.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "PicturesDownloader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a18579132/Desktop/NeedConstraints/PicturesDownloader/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

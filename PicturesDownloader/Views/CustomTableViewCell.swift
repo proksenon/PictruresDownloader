@@ -27,7 +27,7 @@ class CustomTableViewCell: UITableViewCell {
     }
 
 	func configureCell(image: UIImage?) {
-		addSubview(customImageView)
+//		addSubview(customImageView)
 		customImageView.image = image
 		customImageView.contentMode = .scaleToFill
 	}

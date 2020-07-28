@@ -7,18 +7,19 @@
 //
 
 import Foundation
-
+import KeychainSwift
 class KeyForEncrypte {
 	let encryption = EncriptionWork()
+	let keychain = KeychainSwift()
 
 	func getKey()-> String? {
-		if let keyForEncrypte = UserDefaults.standard.object(forKey: "KeyForEncrypte") as? String {
+		if let keyForEncrypte = keychain.get("KeyForEncrypte") {
 			print("keyLoad = \(keyForEncrypte)")
 			return keyForEncrypte
 		} else {
 			do {
 				let keyForEncrypte = try encryption.generateEncryptionKey(withPassword: "123")
-				UserDefaults.standard.set(keyForEncrypte, forKey: "KeyForEncrypte")
+				keychain.set(keyForEncrypte, forKey: "KeyForEncrypte")
 				print("keySet = \(keyForEncrypte)")
 				return(keyForEncrypte)
 			} catch let error {
@@ -28,3 +29,4 @@ class KeyForEncrypte {
 		return nil
 	}
 }
+
