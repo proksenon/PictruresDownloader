@@ -15,7 +15,8 @@ final class ActivityIndicator {
     init(view: UIView) {
         self.view = view
 		activityIndicator.style = .large
-		activityIndicator.center = CGPoint(x: UIScreen.main.bounds.size.width/2, y: UIScreen.main.bounds.size.height/6)
+//		activityIndicator.center = CGPoint(x: UIScreen.main.bounds.size.width/2, y: UIScreen.main.bounds.size.height/6)
+		activityIndicator.center = view.center
 		print(view.frame.size.width)
     }
 

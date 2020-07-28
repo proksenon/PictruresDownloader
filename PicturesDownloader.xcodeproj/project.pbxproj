@@ -15,6 +15,11 @@
 		D5121D0D24CEEC7600789A93 /* UserDefaultsWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */; };
 		D5121D0F24CF12DC00789A93 /* EncryptionWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */; };
 		D515CF7D24CF6092006DED7D /* KeyForEncrypte.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */; };
+		D515CFC924D074D2006DED7D /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CFC824D074D2006DED7D /* CustomCollectionView.swift */; };
+		D515CFCB24D074E5006DED7D /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CFCA24D074E5006DED7D /* CustomCollectionViewCell.swift */; };
+		D515CFCD24D07528006DED7D /* ZoomAndSnapFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CFCC24D07528006DED7D /* ZoomAndSnapFlowLayout.swift */; };
+		D515CFCF24D075CE006DED7D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CFCE24D075CE006DED7D /* CollectionViewController.swift */; };
+		D515CFD124D07609006DED7D /* CollecioViewCotrollerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CFD024D07609006DED7D /* CollecioViewCotrollerExtension.swift */; };
 		D52E992E24BF4AE2001B50EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E992D24BF4AE2001B50EA /* AppDelegate.swift */; };
 		D52E993024BF4AE2001B50EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E992F24BF4AE2001B50EA /* SceneDelegate.swift */; };
 		D52E993224BF4AE2001B50EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E993124BF4AE2001B50EA /* ViewController.swift */; };
@@ -74,6 +79,11 @@
 		D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWork.swift; sourceTree = "<group>"; };
 		D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionWork.swift; sourceTree = "<group>"; };
 		D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyForEncrypte.swift; sourceTree = "<group>"; };
+		D515CFC824D074D2006DED7D /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		D515CFCA24D074E5006DED7D /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		D515CFCC24D07528006DED7D /* ZoomAndSnapFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAndSnapFlowLayout.swift; sourceTree = "<group>"; };
+		D515CFCE24D075CE006DED7D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D515CFD024D07609006DED7D /* CollecioViewCotrollerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollecioViewCotrollerExtension.swift; sourceTree = "<group>"; };
 		D52E992A24BF4AE2001B50EA /* PicturesDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicturesDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52E992D24BF4AE2001B50EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D52E992F24BF4AE2001B50EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +197,7 @@
 				D52E996024BF63D6001B50EA /* ImageProvider.swift */,
 				D52E996224C06742001B50EA /* FileProvider.swift */,
 				D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */,
+				D515CFCC24D07528006DED7D /* ZoomAndSnapFlowLayout.swift */,
 				D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */,
 				D52E996624C19715001B50EA /* ImageResizer.swift */,
 				D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */,
@@ -223,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				D54D184524C827030059AE9D /* ViewControllerWorkTableExtension.swift */,
+				D515CFD024D07609006DED7D /* CollecioViewCotrollerExtension.swift */,
 				D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */,
 				D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */,
 			);
@@ -256,6 +268,7 @@
 			children = (
 				D52E993124BF4AE2001B50EA /* ViewController.swift */,
 				D52E996E24C7467B001B50EA /* ImageViewController.swift */,
+				D515CFCE24D075CE006DED7D /* CollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -266,6 +279,8 @@
 				D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */,
 				D5121D0824CD6F9200789A93 /* CustomTableView.swift */,
 				D52E997024C74E53001B50EA /* ImageView.swift */,
+				D515CFCA24D074E5006DED7D /* CustomCollectionViewCell.swift */,
+				D515CFC824D074D2006DED7D /* CustomCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -519,17 +534,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D515CFCD24D07528006DED7D /* ZoomAndSnapFlowLayout.swift in Sources */,
 				D52E996D24C70E33001B50EA /* CustomTableViewCell.swift in Sources */,
 				D52E996324C06742001B50EA /* FileProvider.swift in Sources */,
 				D5121D0D24CEEC7600789A93 /* UserDefaultsWork.swift in Sources */,
 				D5121D0F24CF12DC00789A93 /* EncryptionWork.swift in Sources */,
 				D5D850DF24C8469D005415CB /* ImageResizerProtocol.swift in Sources */,
 				D52E996F24C7467B001B50EA /* ImageViewController.swift in Sources */,
+				D515CFD124D07609006DED7D /* CollecioViewCotrollerExtension.swift in Sources */,
 				D56695AC24C9D7F200AFDDB6 /* StorageProviderProtocol.swift in Sources */,
 				D54D184B24C83CF20059AE9D /* CGSizeStringExtension.swift in Sources */,
 				D52E996124BF63D6001B50EA /* ImageProvider.swift in Sources */,
 				D54D184824C83BF90059AE9D /* UIImageResizeExtension.swift in Sources */,
 				D5121D0924CD6F9200789A93 /* CustomTableView.swift in Sources */,
+				D515CFCF24D075CE006DED7D /* CollectionViewController.swift in Sources */,
 				D52E997124C74E53001B50EA /* ImageView.swift in Sources */,
 				D52E996B24C1EFCD001B50EA /* ImageNameManager.swift in Sources */,
 				D52E993224BF4AE2001B50EA /* ViewController.swift in Sources */,
@@ -538,6 +556,8 @@
 				D5121D0B24CD716900789A93 /* CustomTableViewProtocol.swift in Sources */,
 				D5D850E724C84878005415CB /* NetworkServiceProtocol.swift in Sources */,
 				D5D850E524C84831005415CB /* ImageProviderProtocol.swift in Sources */,
+				D515CFCB24D074E5006DED7D /* CustomCollectionViewCell.swift in Sources */,
+				D515CFC924D074D2006DED7D /* CustomCollectionView.swift in Sources */,
 				D52E992E24BF4AE2001B50EA /* AppDelegate.swift in Sources */,
 				D5D850E324C847DF005415CB /* FileProviderProtocol.swift in Sources */,
 				D54C339424C9CDA7006AB7D6 /* StorageProvider.swift in Sources */,
