@@ -6,6 +6,8 @@ final class ImageProvider: ImageProviderProtocol {
 	let imageNameManager: ImageNameManagerProtocol
 	let imageResizer: ImageResizerProtocol
 	let defaultImage = UIImage(named: "defultImage")
+	let encryption = EncriptionWork()
+	let keyForEncrypte = KeyForEncrypte()
 
 	init(networkService: NetworkServiceProtocol = NetworkService(),
 		 fileProvider: FileProviderProtocol = FileProvider(),
@@ -23,7 +25,13 @@ final class ImageProvider: ImageProviderProtocol {
 			let nameFile = imageNameManager.getNameFileImage(url: url, size: size)
 			if fileProvider.checkDirectory(nameFile: nameFile) {
 				if let data = fileProvider.readFile(nameFile: nameFile) {
-					completion(UIImage(data: data))
+					guard let key = keyForEncrypte.getKey() else {return}
+					do {
+						let decryptData = try encryption.decryptMessage(encryptedMessage: data, encryptionKey: key)
+						completion(UIImage(data: decryptData))
+					} catch let error {
+						print(error)
+					}
 				}
 			} else {
 				originalToSize(url: url, nameFile: nameFile, size: size) { (image) in
@@ -45,17 +53,29 @@ final class ImageProvider: ImageProviderProtocol {
 
 	private func dataToFile(url: String, nameFile: String, data: Data) {
 		let path = self.fileProvider.createFile(url: url, nameFile: nameFile)
-		print(path)
-		self.fileProvider.writeToFile(data: data, path: path)
+		guard let key = keyForEncrypte.getKey() else {return}
+		do {
+			let dataEncrypt = try encryption.encryptMessage(message: data, encryptionKey: key)
+			print(path)
+			self.fileProvider.writeToFile(data: dataEncrypt, path: path)
+		} catch let error {
+			print(error)
+		}
 	}
 
 	private func originalToSize(url: String, nameFile: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
 		if let data = fileProvider.readFile(nameFile: imageNameManager.getNameFileImage(url: url, size: nil)) {
-			if let newData = imageResizer.imageToSize(nameFile: nameFile, size: size, data: data) {
-				completion (UIImage(data: newData))
-				dataToFile(url: url, nameFile: nameFile, data: newData)
-			} else {
-				completion (UIImage(data: data))
+			guard let key = keyForEncrypte.getKey() else {return}
+			do {
+				let decryptData = try encryption.decryptMessage(encryptedMessage: data, encryptionKey: key)
+				if let newData = imageResizer.imageToSize(nameFile: nameFile, size: size, data: decryptData) {
+					completion (UIImage(data: newData))
+					dataToFile(url: url, nameFile: nameFile, data: newData)
+				} else {
+					completion (UIImage(data: data))
+				}
+			} catch let error {
+				print(error)
 			}
 		}
 	}

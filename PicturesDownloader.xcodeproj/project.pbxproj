@@ -3,13 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48F05EB86C7173EC9BD96E66 /* Pods_PicturesDownloaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716EFB604BD057B3A5D08302 /* Pods_PicturesDownloaderTests.framework */; };
+		72261E1751B6DA9776D9B2C0 /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF67D182A8A32A32896140E /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework */; };
+		7D151BC2443411EC8D278897 /* Pods_PicturesDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB2C10732D085367BD09E2B /* Pods_PicturesDownloader.framework */; };
 		D5121D0924CD6F9200789A93 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0824CD6F9200789A93 /* CustomTableView.swift */; };
 		D5121D0B24CD716900789A93 /* CustomTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0A24CD716900789A93 /* CustomTableViewProtocol.swift */; };
 		D5121D0D24CEEC7600789A93 /* UserDefaultsWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */; };
+		D5121D0F24CF12DC00789A93 /* EncryptionWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */; };
+		D515CF7D24CF6092006DED7D /* KeyForEncrypte.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */; };
 		D52E992E24BF4AE2001B50EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E992D24BF4AE2001B50EA /* AppDelegate.swift */; };
 		D52E993024BF4AE2001B50EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E992F24BF4AE2001B50EA /* SceneDelegate.swift */; };
 		D52E993224BF4AE2001B50EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E993124BF4AE2001B50EA /* ViewController.swift */; };
@@ -57,9 +62,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4EA30D133A455E002A19D5 /* Pods-PicturesDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicturesDownloader.debug.xcconfig"; path = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		20FF9ACEE03AA7E436AAA03A /* Pods-PicturesDownloaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicturesDownloaderTests.release.xcconfig"; path = "Target Support Files/Pods-PicturesDownloaderTests/Pods-PicturesDownloaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CB2C10732D085367BD09E2B /* Pods_PicturesDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicturesDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71312AE0E15DE92FDAEE892B /* Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig"; path = "Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		716EFB604BD057B3A5D08302 /* Pods_PicturesDownloaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicturesDownloaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A688ABEC89E4DD4CB44B398D /* Pods-PicturesDownloaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicturesDownloaderTests.debug.xcconfig"; path = "Target Support Files/Pods-PicturesDownloaderTests/Pods-PicturesDownloaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C383AC3489E9379C70F498EC /* Pods-PicturesDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicturesDownloader.release.xcconfig"; path = "Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader.release.xcconfig"; sourceTree = "<group>"; };
 		D5121D0824CD6F9200789A93 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		D5121D0A24CD716900789A93 /* CustomTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewProtocol.swift; sourceTree = "<group>"; };
 		D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWork.swift; sourceTree = "<group>"; };
+		D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionWork.swift; sourceTree = "<group>"; };
+		D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyForEncrypte.swift; sourceTree = "<group>"; };
 		D52E992A24BF4AE2001B50EA /* PicturesDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicturesDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52E992D24BF4AE2001B50EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D52E992F24BF4AE2001B50EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +107,8 @@
 		D5D850E224C847DF005415CB /* FileProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderProtocol.swift; sourceTree = "<group>"; };
 		D5D850E424C84831005415CB /* ImageProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderProtocol.swift; sourceTree = "<group>"; };
 		D5D850E624C84878005415CB /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		EDF67D182A8A32A32896140E /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicturesDownloader_PicturesDownloaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF884969154385644B495500 /* Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig"; path = "Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D151BC2443411EC8D278897 /* Pods_PicturesDownloader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F05EB86C7173EC9BD96E66 /* Pods_PicturesDownloaderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +132,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72261E1751B6DA9776D9B2C0 /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		379DFCF3B468FC0545C2B0B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E4EA30D133A455E002A19D5 /* Pods-PicturesDownloader.debug.xcconfig */,
+				C383AC3489E9379C70F498EC /* Pods-PicturesDownloader.release.xcconfig */,
+				FF884969154385644B495500 /* Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig */,
+				71312AE0E15DE92FDAEE892B /* Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig */,
+				A688ABEC89E4DD4CB44B398D /* Pods-PicturesDownloaderTests.debug.xcconfig */,
+				20FF9ACEE03AA7E436AAA03A /* Pods-PicturesDownloaderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D52E992124BF4AE2001B50EA = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +159,8 @@
 				D52E994324BF4AE5001B50EA /* PicturesDownloaderTests */,
 				D52E994E24BF4AE5001B50EA /* PicturesDownloaderUITests */,
 				D52E992B24BF4AE2001B50EA /* Products */,
+				379DFCF3B468FC0545C2B0B6 /* Pods */,
+				F065DAB0B15F919CAE83321F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +189,8 @@
 				D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */,
 				D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */,
 				D52E996624C19715001B50EA /* ImageResizer.swift */,
+				D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */,
+				D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */,
 				D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */,
 				D54C339124C99730006AB7D6 /* ActivityIndicator.swift */,
 				D52E993324BF4AE2001B50EA /* Main.storyboard */,
@@ -234,6 +270,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F065DAB0B15F919CAE83321F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CB2C10732D085367BD09E2B /* Pods_PicturesDownloader.framework */,
+				EDF67D182A8A32A32896140E /* Pods_PicturesDownloader_PicturesDownloaderUITests.framework */,
+				716EFB604BD057B3A5D08302 /* Pods_PicturesDownloaderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D52E995424BF4AE5001B50EA /* Build configuration list for PBXNativeTarget "PicturesDownloader" */;
 			buildPhases = (
+				EEC43D64D9AF35AD6C7C03A2 /* [CP] Check Pods Manifest.lock */,
 				D52E992624BF4AE2001B50EA /* Sources */,
 				D52E992724BF4AE2001B50EA /* Frameworks */,
 				D52E992824BF4AE2001B50EA /* Resources */,
+				C69B29EB1A5A93E6371E131F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D52E995724BF4AE5001B50EA /* Build configuration list for PBXNativeTarget "PicturesDownloaderTests" */;
 			buildPhases = (
+				2901AAADF03353AB39EB0832 /* [CP] Check Pods Manifest.lock */,
 				D52E993C24BF4AE5001B50EA /* Sources */,
 				D52E993D24BF4AE5001B50EA /* Frameworks */,
 				D52E993E24BF4AE5001B50EA /* Resources */,
@@ -276,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D52E995A24BF4AE5001B50EA /* Build configuration list for PBXNativeTarget "PicturesDownloaderUITests" */;
 			buildPhases = (
+				7DEE77A24DC8DADB80A42EE0 /* [CP] Check Pods Manifest.lock */,
 				D52E994724BF4AE5001B50EA /* Sources */,
 				D52E994824BF4AE5001B50EA /* Frameworks */,
 				D52E994924BF4AE5001B50EA /* Resources */,
+				6D6B5C871EADF662276B0D9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,6 +411,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2901AAADF03353AB39EB0832 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicturesDownloaderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6B5C871EADF662276B0D9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PicturesDownloader-PicturesDownloaderUITests/Pods-PicturesDownloader-PicturesDownloaderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DEE77A24DC8DADB80A42EE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicturesDownloader-PicturesDownloaderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69B29EB1A5A93E6371E131F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PicturesDownloader/Pods-PicturesDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEC43D64D9AF35AD6C7C03A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicturesDownloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D52E992624BF4AE2001B50EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -368,6 +522,7 @@
 				D52E996D24C70E33001B50EA /* CustomTableViewCell.swift in Sources */,
 				D52E996324C06742001B50EA /* FileProvider.swift in Sources */,
 				D5121D0D24CEEC7600789A93 /* UserDefaultsWork.swift in Sources */,
+				D5121D0F24CF12DC00789A93 /* EncryptionWork.swift in Sources */,
 				D5D850DF24C8469D005415CB /* ImageResizerProtocol.swift in Sources */,
 				D52E996F24C7467B001B50EA /* ImageViewController.swift in Sources */,
 				D56695AC24C9D7F200AFDDB6 /* StorageProviderProtocol.swift in Sources */,
@@ -388,6 +543,7 @@
 				D54C339424C9CDA7006AB7D6 /* StorageProvider.swift in Sources */,
 				D54C339224C99730006AB7D6 /* ActivityIndicator.swift in Sources */,
 				D52E996724C19715001B50EA /* ImageResizer.swift in Sources */,
+				D515CF7D24CF6092006DED7D /* KeyForEncrypte.swift in Sources */,
 				D52E995F24BF4C03001B50EA /* NetworkService.swift in Sources */,
 				D52E993024BF4AE2001B50EA /* SceneDelegate.swift in Sources */,
 			);
@@ -560,6 +716,7 @@
 		};
 		D52E995524BF4AE5001B50EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4EA30D133A455E002A19D5 /* Pods-PicturesDownloader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,6 +734,7 @@
 		};
 		D52E995624BF4AE5001B50EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C383AC3489E9379C70F498EC /* Pods-PicturesDownloader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +752,7 @@
 		};
 		D52E995824BF4AE5001B50EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A688ABEC89E4DD4CB44B398D /* Pods-PicturesDownloaderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -615,6 +774,7 @@
 		};
 		D52E995924BF4AE5001B50EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FF9ACEE03AA7E436AAA03A /* Pods-PicturesDownloaderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,6 +796,7 @@
 		};
 		D52E995B24BF4AE5001B50EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF884969154385644B495500 /* Pods-PicturesDownloader-PicturesDownloaderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,6 +816,7 @@
 		};
 		D52E995C24BF4AE5001B50EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71312AE0E15DE92FDAEE892B /* Pods-PicturesDownloader-PicturesDownloaderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

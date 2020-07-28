@@ -6,6 +6,7 @@ class ViewController: UIViewController {
 	let fileProvider = FileProvider()
 	let defaultImage = UIImage(named: "defultImage")
 	let tableView: CustomTableViewProtocol = CustomTableView()
+	let encryptionWork = EncriptionWork()
 	var urls: [String] = [
 		"https://i.pinimg.com/originals/b3/c2/ff/b3c2ff8bcfad7ad8b6af0ceb99ffc7ef.jpg",
 		"https://media.idownloadblog.com/wp-content/uploads/2020/06/iOS-14-iPhone-Wallpaper-iDownloadBlog-ispazio-dark-1.jpg",
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		let date = Calendar.current.date(byAdding: .day, value: -2, to: Date())
-		//storageProvider.freeALL(urls: urls)
+//		storageProvider.freeALL(urls: urls)
 		DispatchQueue.global(qos: .background).async {
 			self.storageProvider.freeStorage(befora: date)
 		}
