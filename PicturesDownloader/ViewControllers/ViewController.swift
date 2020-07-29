@@ -35,9 +35,22 @@ class ViewController: UIViewController {
 		DispatchQueue.global(qos: .background).async {
 			self.storageProvider.freeStorage(befora: date)
 		}
+
 		super.viewDidLoad()
+//		let button = UIBarButtonItem(image:  , style: UIBarButtonItem.Style.done, target: self, action: #selector(makeCollection(_:)))
+		let button = UIBarButtonItem(title: "Collection", style: UIBarButtonItem.Style.done, target: self, action: #selector(makeCollection(_:)) )
+		navigationItem.rightBarButtonItem = button
 		view.backgroundColor = .white
 		tableView.setTableView(viewController: self)
+	}
+	@objc func makeCollection(_ sender: UIBarButtonItem){
+		let navigationController = UINavigationController(
+            rootViewController: CollectionViewController()
+        )
+		let nextVC = CollectionViewController()
+		self.navigationController?.pushViewController(nextVC, animated: true)
+//		nextVC.modalPresentationStyle = .fullScreen
+//		self.present(nextVC, animated: false)
 	}
 
 }

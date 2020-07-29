@@ -18,7 +18,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
 		imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
 		imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
 		imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-		backgroundColor = .yellow
+		backgroundColor = .white
 
 	}
 

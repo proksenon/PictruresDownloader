@@ -42,7 +42,8 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
 		imageProvider.loadImage(url: urls[indexPath.row], size: nil) { (image) in
 			nextVC.image = image
 		}
-		self.present(nextVC, animated: false)
+		self.navigationController?.pushViewController(nextVC, animated: true)
+		//self.present(nextVC, animated: false)
 	}
 
 

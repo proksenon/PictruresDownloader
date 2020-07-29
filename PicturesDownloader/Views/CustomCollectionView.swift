@@ -15,7 +15,7 @@ class CustomCollectionView: UICollectionView {
 		let layout = UICollectionViewFlowLayout()
 		layout.scrollDirection = .horizontal
 		super.init(frame: .zero, collectionViewLayout: layout)
-		backgroundColor = .yellow
+		backgroundColor = .white
 		collectionViewLayout = flowLayout
 		contentInsetAdjustmentBehavior = .always
 		showsHorizontalScrollIndicator = false
@@ -27,7 +27,7 @@ class CustomCollectionView: UICollectionView {
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
-	func setCollectionViewConstaints(collectionViewController: CollectionViewController){
+	func setCollectionViewConstraints(collectionViewController: CollectionViewController){
 		delegate = collectionViewController.self
 		dataSource = collectionViewController.self
 		translatesAutoresizingMaskIntoConstraints = false

@@ -44,8 +44,8 @@ class CollectionViewController: UIViewController {
 //		storageProvider.freeALL(urls: urls)
 //		collectionView.delegate = self
 //		collectionView.dataSource = self
-		view.backgroundColor = .yellow
-		collectionView.setCollectionViewConstaints(collectionViewController: self)
+		view.backgroundColor = .white
+		collectionView.setCollectionViewConstraints(collectionViewController: self)
 	}
 
 

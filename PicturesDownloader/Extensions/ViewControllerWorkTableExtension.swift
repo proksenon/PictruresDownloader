@@ -26,15 +26,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let nextVC = ImageViewController()
-		nextVC.modalPresentationStyle = .fullScreen
+		//nextVC.modalPresentationStyle = .fullScreen
 
 		let screenSize = UIScreen.main.bounds
 		let screenWidth = screenSize.width
 		let screenHeight = screenSize.height
-
+		
 		imageProvider.loadImage(url: urls[indexPath.row], size: nil) { (image) in
 			nextVC.image = image
 		}
-		self.present(nextVC, animated: false)
+		self.navigationController?.pushViewController(nextVC, animated: true)
+		//self.present(nextVC, animated: false)
 	}
 }
