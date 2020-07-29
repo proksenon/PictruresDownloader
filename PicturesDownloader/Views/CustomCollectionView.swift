@@ -18,6 +18,7 @@ class CustomCollectionView: UICollectionView {
 		backgroundColor = .yellow
 		collectionViewLayout = flowLayout
 		contentInsetAdjustmentBehavior = .always
+		showsHorizontalScrollIndicator = false
 		register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
 //		layout.minimumLineSpacing = 50
 //		contentInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 50)

@@ -31,5 +31,19 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
 		return CGSize(width: 300, height: 600)
 	}
 
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let nextVC = ImageViewController()
+		nextVC.modalPresentationStyle = .fullScreen
+
+		let screenSize = UIScreen.main.bounds
+		let screenWidth = screenSize.width
+		let screenHeight = screenSize.height
+
+		imageProvider.loadImage(url: urls[indexPath.row], size: nil) { (image) in
+			nextVC.image = image
+		}
+		self.present(nextVC, animated: false)
+	}
+
 
 }

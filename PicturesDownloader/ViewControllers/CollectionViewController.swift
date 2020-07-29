@@ -42,7 +42,7 @@ class CollectionViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.addSubview(collectionView)
-		storageProvider.freeALL(urls: urls)
+//		storageProvider.freeALL(urls: urls)
 //		collectionView.delegate = self
 //		collectionView.dataSource = self
 		view.backgroundColor = .yellow

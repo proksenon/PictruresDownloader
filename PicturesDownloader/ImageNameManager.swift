@@ -24,7 +24,7 @@ final class ImageNameManager: ImageNameManagerProtocol {
 		return nameFile
 	}
 
-	func createNameImage()->String{
+	private func createNameImage()->String{
 		let string = "image" + UUID().uuidString
 		return string
 	}
