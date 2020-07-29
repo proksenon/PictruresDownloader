@@ -1,12 +1,11 @@
 import UIKit
 
-class ImageView: UIView {
+class FullImageView: UIView {
 
 	var imageView: UIImageView = UIImageView()
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-//		imageView.contentMode = .center
 		self.addSubview(imageView)
 		setupImageViewConstraints()
 	}
@@ -21,10 +20,6 @@ class ImageView: UIView {
 		imageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
 		imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
 		imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-//		imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-//		imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-//		imageView.translatesAutoresizingMaskIntoConstraints = false
-//		imageView.sizeToFit()
 	}
 
 }

@@ -11,7 +11,7 @@ class ImageViewController: UIViewController {
     }
 
 	override func loadView() {
-		let view = ImageView()
+		let view = FullImageView()
 		view.imageView.image = image
 		self.view = view
 	}

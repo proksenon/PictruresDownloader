@@ -8,13 +8,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		guard let windowScene = (scene as? UIWindowScene) else { return }
 		let navigationController = UINavigationController(
-            rootViewController: CollectionViewController()
+            rootViewController: ViewController()
         )
         navigationController.navigationBar.prefersLargeTitles = true
 
 		window = UIWindow()
         window?.windowScene = windowScene
-        window?.rootViewController = CollectionViewController()
+        window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
 	}
 

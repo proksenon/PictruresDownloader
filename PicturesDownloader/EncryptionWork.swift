@@ -9,16 +9,12 @@ import Foundation
 class EncriptionWork {
 
    func encryptMessage(message: Data, encryptionKey: String) throws -> Data {
-//		   let messageData = message.data(using: .utf8)!
 		   let cipherData = RNCryptor.encrypt(data: message, withPassword: encryptionKey)
 		   return cipherData
 	   }
 
 	func decryptMessage(encryptedMessage: Data, encryptionKey: String) throws -> Data {
-
-		   //let encryptedData = Data.init(base64Encoded: encryptedMessage)!
 		   let decryptedData = try RNCryptor.decrypt(data: encryptedMessage, withPassword: encryptionKey)
-//		   let decryptedString = String(data: decryptedData, encoding: .utf8)!
 		   return decryptedData
 	   }
 
@@ -28,4 +24,3 @@ class EncriptionWork {
 		return cipherData.base64EncodedString()
 	}
 }
-

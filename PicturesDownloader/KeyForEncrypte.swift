@@ -20,7 +20,6 @@ class KeyForEncrypte {
 			do {
 				let keyForEncrypte = try encryption.generateEncryptionKey(withPassword: "123")
 				keychain.set(keyForEncrypte, forKey: "KeyForEncrypte")
-				print("keySet = \(keyForEncrypte)")
 				return(keyForEncrypte)
 			} catch let error {
 				print(error)

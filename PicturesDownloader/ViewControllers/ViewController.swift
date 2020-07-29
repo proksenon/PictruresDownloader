@@ -5,7 +5,7 @@ class ViewController: UIViewController {
 	let storageProvider:StorageProviderProtocol = StorageProvider()
 	let fileProvider = FileProvider()
 	let defaultImage = UIImage(named: "defultImage")
-	let tableView: CustomTableViewProtocol = CustomTableView()
+	let tableView = CustomTableView()
 	let encryptionWork = EncriptionWork()
 	var urls: [String] = [
 		"https://i.pinimg.com/originals/b3/c2/ff/b3c2ff8bcfad7ad8b6af0ceb99ffc7ef.jpg",

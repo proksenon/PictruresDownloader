@@ -11,7 +11,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
 		NSLayoutConstraint.activate([cell.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.height/3)])
-		print(UIScreen.main.bounds.size.width)
+		cell.contentView.frame.size = CGSize(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height/3)
+		print(cell.contentView.frame.size)
 		let activity = ActivityIndicator(view: cell.contentView)
 
 		activity.startActivity()

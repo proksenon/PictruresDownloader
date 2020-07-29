@@ -35,7 +35,7 @@
 		D52E996B24C1EFCD001B50EA /* ImageNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */; };
 		D52E996D24C70E33001B50EA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */; };
 		D52E996F24C7467B001B50EA /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E996E24C7467B001B50EA /* ImageViewController.swift */; };
-		D52E997124C74E53001B50EA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E997024C74E53001B50EA /* ImageView.swift */; };
+		D52E997124C74E53001B50EA /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E997024C74E53001B50EA /* FullImageView.swift */; };
 		D54C339224C99730006AB7D6 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C339124C99730006AB7D6 /* ActivityIndicator.swift */; };
 		D54C339424C9CDA7006AB7D6 /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */; };
 		D54D184624C827030059AE9D /* ViewControllerWorkTableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184524C827030059AE9D /* ViewControllerWorkTableExtension.swift */; };
@@ -105,7 +105,7 @@
 		D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameManager.swift; sourceTree = "<group>"; };
 		D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D52E996E24C7467B001B50EA /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		D52E997024C74E53001B50EA /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		D52E997024C74E53001B50EA /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
 		D54C339124C99730006AB7D6 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 		D54D184524C827030059AE9D /* ViewControllerWorkTableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWorkTableExtension.swift; sourceTree = "<group>"; };
@@ -203,7 +203,6 @@
 				D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */,
 				D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */,
 				D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */,
-				D54C339124C99730006AB7D6 /* ActivityIndicator.swift */,
 				D52E993324BF4AE2001B50EA /* Main.storyboard */,
 				D52E993624BF4AE5001B50EA /* Assets.xcassets */,
 				D52E993824BF4AE5001B50EA /* LaunchScreen.storyboard */,
@@ -241,6 +240,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D56E33F724D1826D00A490EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D515CFCA24D074E5006DED7D /* CustomCollectionViewCell.swift */,
+				D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D5D850D924C845E7005415CB /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,11 +284,11 @@
 		D5D850DD24C84663005415CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */,
 				D5121D0824CD6F9200789A93 /* CustomTableView.swift */,
-				D52E997024C74E53001B50EA /* ImageView.swift */,
-				D515CFCA24D074E5006DED7D /* CustomCollectionViewCell.swift */,
 				D515CFC824D074D2006DED7D /* CustomCollectionView.swift */,
+				D52E997024C74E53001B50EA /* FullImageView.swift */,
+				D54C339124C99730006AB7D6 /* ActivityIndicator.swift */,
+				D56E33F724D1826D00A490EB /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -548,7 +556,7 @@
 				D54D184824C83BF90059AE9D /* UIImageResizeExtension.swift in Sources */,
 				D5121D0924CD6F9200789A93 /* CustomTableView.swift in Sources */,
 				D515CFCF24D075CE006DED7D /* CollectionViewController.swift in Sources */,
-				D52E997124C74E53001B50EA /* ImageView.swift in Sources */,
+				D52E997124C74E53001B50EA /* FullImageView.swift in Sources */,
 				D52E996B24C1EFCD001B50EA /* ImageNameManager.swift in Sources */,
 				D52E993224BF4AE2001B50EA /* ViewController.swift in Sources */,
 				D5D850E124C84730005415CB /* ImageNameManagerProtocol.swift in Sources */,
