@@ -6,8 +6,9 @@ final class ImageProvider: ImageProviderProtocol {
 	let imageNameManager: ImageNameManagerProtocol
 	let imageResizer: ImageResizerProtocol
 	let defaultImage = UIImage(named: "defultImage")
-	let encryption = EncriptionWork()
-	let keyForEncrypte = KeyForEncrypte()
+//	let encryption = EncriptionWork()
+//	let keyForEncrypte = KeyForEncrypte()
+	let encryptionManager = EncryptionManager()
 
 	init(networkService: NetworkServiceProtocol = NetworkService(),
 		 fileProvider: FileProviderProtocol = FileProvider(),
@@ -25,12 +26,8 @@ final class ImageProvider: ImageProviderProtocol {
 			let nameFile = imageNameManager.getNameFileImage(url: url, size: size)
 			if fileProvider.checkDirectory(nameFile: nameFile) {
 				if let data = fileProvider.readFile(nameFile: nameFile) {
-					guard let key = keyForEncrypte.getKey() else {return}
-					do {
-						let decryptData = try encryption.decryptMessage(encryptedMessage: data, encryptionKey: key)
+					if let decryptData = encryptionManager.decryptionData(data: data) {
 						completion(UIImage(data: decryptData))
-					} catch let error {
-						print(error)
 					}
 				}
 			} else {
@@ -41,7 +38,7 @@ final class ImageProvider: ImageProviderProtocol {
 		} else {
 			if let currentUrl = URL(string: url) {
 				networkService.getData(url: currentUrl) { (data) in
-					self.dataToFile(url: url, nameFile: nameFileOrigin, data: data)
+					self.dataToFile(nameFile: nameFileOrigin, data: data)
 					let nameFile = self.imageNameManager.getNameFileImage(url: url, size: size)
 					self.originalToSize(url: url, nameFile: nameFile, size: size) { (image) in
 						completion(image)
@@ -51,31 +48,22 @@ final class ImageProvider: ImageProviderProtocol {
 		}
 	}
 
-	private func dataToFile(url: String, nameFile: String, data: Data) {
-		let path = self.fileProvider.createFile(url: url, nameFile: nameFile)
-		guard let key = keyForEncrypte.getKey() else {return}
-		do {
-			let dataEncrypt = try encryption.encryptMessage(message: data, encryptionKey: key)
-			print(path)
-			self.fileProvider.writeToFile(data: dataEncrypt, path: path)
-		} catch let error {
-			print(error)
+	private func dataToFile(nameFile: String, data: Data) {
+		let path = self.fileProvider.getPath(nameFile: nameFile, directory: NSTemporaryDirectory())
+		if let encryptData = encryptionManager.encryptionData(data: data) {
+			self.fileProvider.writeToFile(data: encryptData, path: path)
 		}
 	}
 
 	private func originalToSize(url: String, nameFile: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
 		if let data = fileProvider.readFile(nameFile: imageNameManager.getNameFileImage(url: url, size: nil)) {
-			guard let key = keyForEncrypte.getKey() else {return}
-			do {
-				let decryptData = try encryption.decryptMessage(encryptedMessage: data, encryptionKey: key)
+			if let decryptData = encryptionManager.decryptionData(data: data) {
 				if let newData = imageResizer.imageToSize(nameFile: nameFile, size: size, data: decryptData) {
 					completion (UIImage(data: newData))
-					dataToFile(url: url, nameFile: nameFile, data: newData)
+					dataToFile(nameFile: nameFile, data: newData)
 				} else {
-					completion (UIImage(data: data))
+					completion (UIImage(data: decryptData))
 				}
-			} catch let error {
-				print(error)
 			}
 		}
 	}

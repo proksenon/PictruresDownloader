@@ -11,10 +11,6 @@ final class FileProvider: FileProviderProtocol {
 		if let _ = defaults.object(forKey: url) as? [String:String] {return true}
 		return false
 	}
-
-	func createFile(url: String, nameFile: String)->String {
-		return (tempDirectory as NSString).appendingPathComponent(nameFile)
-    }
 	
 	func writeToFile(data: Data, path: String){
 		do {
@@ -43,7 +39,7 @@ final class FileProvider: FileProviderProtocol {
 	   }
 
 	func readFile(nameFile: String)->Data? {
-		let path = (tempDirectory as NSString).appendingPathComponent(nameFile)
+		let path = getPath(nameFile: nameFile)
 		print("try to read \(nameFile) with path = \(path)")
 		if let contentsOfFile = NSData(contentsOf: URL(fileURLWithPath: path)) as Data? {
 			print("return data")
@@ -51,10 +47,12 @@ final class FileProvider: FileProviderProtocol {
 		}
 		return nil
 	}
-
+	func getPath(nameFile: String, directory: String = NSTemporaryDirectory())->String{
+		return (directory as NSString).appendingPathComponent(nameFile)
+	}
 	private func removeFile(nameFile: String, before date: Date? = Date()) {
         do {
-			let path = (tempDirectory as NSString).appendingPathComponent(nameFile)
+			let path = getPath(nameFile: nameFile)
 			let dateFile = try fileManager.attributesOfItem(atPath: path)[FileAttributeKey.creationDate] as! Date
 			let sizeFile = try fileManager.attributesOfItem(atPath: path)[FileAttributeKey.size] as! Int
 			if let date = date {

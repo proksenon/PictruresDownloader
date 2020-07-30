@@ -42,6 +42,7 @@
 		D54D184824C83BF90059AE9D /* UIImageResizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */; };
 		D54D184B24C83CF20059AE9D /* CGSizeStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */; };
 		D56695AC24C9D7F200AFDDB6 /* StorageProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56695AB24C9D7F200AFDDB6 /* StorageProviderProtocol.swift */; };
+		D56E33F924D2BDCD00A490EB /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E33F824D2BDCD00A490EB /* EncryptionManager.swift */; };
 		D5D850DF24C8469D005415CB /* ImageResizerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D850DE24C8469D005415CB /* ImageResizerProtocol.swift */; };
 		D5D850E124C84730005415CB /* ImageNameManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D850E024C84730005415CB /* ImageNameManagerProtocol.swift */; };
 		D5D850E324C847DF005415CB /* FileProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D850E224C847DF005415CB /* FileProviderProtocol.swift */; };
@@ -112,6 +113,7 @@
 		D54D184724C83BF90059AE9D /* UIImageResizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageResizeExtension.swift; sourceTree = "<group>"; };
 		D54D184A24C83CF20059AE9D /* CGSizeStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeStringExtension.swift; sourceTree = "<group>"; };
 		D56695AB24C9D7F200AFDDB6 /* StorageProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProviderProtocol.swift; sourceTree = "<group>"; };
+		D56E33F824D2BDCD00A490EB /* EncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
 		D5D850DE24C8469D005415CB /* ImageResizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizerProtocol.swift; sourceTree = "<group>"; };
 		D5D850E024C84730005415CB /* ImageNameManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameManagerProtocol.swift; sourceTree = "<group>"; };
 		D5D850E224C847DF005415CB /* FileProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderProtocol.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */,
 				D52E996624C19715001B50EA /* ImageResizer.swift */,
 				D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */,
+				D56E33F824D2BDCD00A490EB /* EncryptionManager.swift */,
 				D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */,
 				D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */,
 				D52E993324BF4AE2001B50EA /* Main.storyboard */,
@@ -553,6 +556,7 @@
 				D56695AC24C9D7F200AFDDB6 /* StorageProviderProtocol.swift in Sources */,
 				D54D184B24C83CF20059AE9D /* CGSizeStringExtension.swift in Sources */,
 				D52E996124BF63D6001B50EA /* ImageProvider.swift in Sources */,
+				D56E33F924D2BDCD00A490EB /* EncryptionManager.swift in Sources */,
 				D54D184824C83BF90059AE9D /* UIImageResizeExtension.swift in Sources */,
 				D5121D0924CD6F9200789A93 /* CustomTableView.swift in Sources */,
 				D515CFCF24D075CE006DED7D /* CollectionViewController.swift in Sources */,

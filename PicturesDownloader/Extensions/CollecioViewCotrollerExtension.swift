@@ -43,7 +43,6 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
 			nextVC.image = image
 		}
 		self.navigationController?.pushViewController(nextVC, animated: true)
-		//self.present(nextVC, animated: false)
 	}
 
 

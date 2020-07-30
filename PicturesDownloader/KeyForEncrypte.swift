@@ -9,7 +9,7 @@
 import Foundation
 import KeychainSwift
 class KeyForEncrypte {
-	let encryption = EncriptionWork()
+	let encryption = EncryptionWork()
 	let keychain = KeychainSwift()
 
 	func getKey()-> String? {

@@ -3,10 +3,8 @@ import UIKit
 class ViewController: UIViewController {
 	let imageProvider: ImageProviderProtocol = ImageProvider()
 	let storageProvider:StorageProviderProtocol = StorageProvider()
-	let fileProvider = FileProvider()
 	let defaultImage = UIImage(named: "defultImage")
 	let tableView = CustomTableView()
-	let encryptionWork = EncriptionWork()
 	var urls: [String] = [
 		"https://i.pinimg.com/originals/b3/c2/ff/b3c2ff8bcfad7ad8b6af0ceb99ffc7ef.jpg",
 		"https://media.idownloadblog.com/wp-content/uploads/2020/06/iOS-14-iPhone-Wallpaper-iDownloadBlog-ispazio-dark-1.jpg",
@@ -37,7 +35,6 @@ class ViewController: UIViewController {
 		}
 
 		super.viewDidLoad()
-//		let button = UIBarButtonItem(image:  , style: UIBarButtonItem.Style.done, target: self, action: #selector(makeCollection(_:)))
 		let button = UIBarButtonItem(title: "Collection", style: UIBarButtonItem.Style.done, target: self, action: #selector(makeCollection(_:)) )
 		navigationItem.rightBarButtonItem = button
 		view.backgroundColor = .white
@@ -49,8 +46,6 @@ class ViewController: UIViewController {
         )
 		let nextVC = CollectionViewController()
 		self.navigationController?.pushViewController(nextVC, animated: true)
-//		nextVC.modalPresentationStyle = .fullScreen
-//		self.present(nextVC, animated: false)
 	}
 
 }

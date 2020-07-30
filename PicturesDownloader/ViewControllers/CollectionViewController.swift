@@ -10,12 +10,9 @@ import UIKit
 
 class CollectionViewController: UIViewController {
 	let collectionView = CustomCollectionView()
-	let images = [UIImage(named: "Image5"),UIImage(named: "Image4"),UIImage(named: "Image1"),UIImage(named: "Image2"),UIImage(named: "Image3")]
 	let imageProvider: ImageProviderProtocol = ImageProvider()
 	let storageProvider:StorageProviderProtocol = StorageProvider()
-	let fileProvider = FileProvider()
 	let defaultImage = UIImage(named: "defultImage")
-	let encryptionWork = EncriptionWork()
 	var urls: [String] = [
 		"https://i.pinimg.com/originals/b3/c2/ff/b3c2ff8bcfad7ad8b6af0ceb99ffc7ef.jpg",
 		"https://media.idownloadblog.com/wp-content/uploads/2020/06/iOS-14-iPhone-Wallpaper-iDownloadBlog-ispazio-dark-1.jpg",
@@ -42,8 +39,6 @@ class CollectionViewController: UIViewController {
 		super.viewDidLoad()
 		view.addSubview(collectionView)
 //		storageProvider.freeALL(urls: urls)
-//		collectionView.delegate = self
-//		collectionView.dataSource = self
 		view.backgroundColor = .white
 		collectionView.setCollectionViewConstraints(collectionViewController: self)
 	}
