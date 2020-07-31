@@ -6,8 +6,6 @@ final class ImageProvider: ImageProviderProtocol {
 	let imageNameManager: ImageNameManagerProtocol
 	let imageResizer: ImageResizerProtocol
 	let defaultImage = UIImage(named: "defultImage")
-//	let encryption = EncriptionWork()
-//	let keyForEncrypte = KeyForEncrypte()
 	let encryptionManager = EncryptionManager()
 
 	init(networkService: NetworkServiceProtocol = NetworkService(),
@@ -20,9 +18,18 @@ final class ImageProvider: ImageProviderProtocol {
 		self.imageResizer = imageResizer
 	}
 
+//	func getNameCheckDirect(url: String, size: CGSize? = nil)-> String? {
+//		let nameFile = imageNameManager.getNameFileImage(url: url, size: size)
+//		if fileProvider.checkDirectory(nameFile: nameFile) {
+//			return nameFile
+//		} else {
+//			return nil
+//		}
+//	}
+	
 	func loadImage(url: String, size: CGSize?, completion: @escaping (UIImage?) -> Void) {
 		let nameFileOrigin = imageNameManager.getNameFileImage(url: url, size: nil)
-		if fileProvider.checkOriginImage(url: url) && fileProvider.checkDirectory(nameFile: nameFileOrigin) {
+		if fileProvider.checkDirectory(nameFile: nameFileOrigin) {
 			let nameFile = imageNameManager.getNameFileImage(url: url, size: size)
 			if fileProvider.checkDirectory(nameFile: nameFile) {
 				if let data = fileProvider.readFile(nameFile: nameFile) {

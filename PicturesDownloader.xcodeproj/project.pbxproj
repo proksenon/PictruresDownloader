@@ -196,16 +196,7 @@
 				D5D850D924C845E7005415CB /* Network */,
 				D5D850DD24C84663005415CB /* Views */,
 				D5D850DB24C8460B005415CB /* Proocols */,
-				D52E996024BF63D6001B50EA /* ImageProvider.swift */,
-				D52E996224C06742001B50EA /* FileProvider.swift */,
-				D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */,
-				D515CFCC24D07528006DED7D /* ZoomAndSnapFlowLayout.swift */,
-				D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */,
-				D52E996624C19715001B50EA /* ImageResizer.swift */,
-				D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */,
-				D56E33F824D2BDCD00A490EB /* EncryptionManager.swift */,
-				D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */,
-				D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */,
+				D56E33FA24D2DD5F00A490EB /* Services */,
 				D52E993324BF4AE2001B50EA /* Main.storyboard */,
 				D52E993624BF4AE5001B50EA /* Assets.xcassets */,
 				D52E993824BF4AE5001B50EA /* LaunchScreen.storyboard */,
@@ -250,6 +241,31 @@
 				D52E996C24C70E33001B50EA /* CustomTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D56E33FA24D2DD5F00A490EB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D52E996024BF63D6001B50EA /* ImageProvider.swift */,
+				D52E996A24C1EFCD001B50EA /* ImageNameManager.swift */,
+				D52E996624C19715001B50EA /* ImageResizer.swift */,
+				D52E996224C06742001B50EA /* FileProvider.swift */,
+				D515CFCC24D07528006DED7D /* ZoomAndSnapFlowLayout.swift */,
+				D5121D0C24CEEC7600789A93 /* UserDefaultsWork.swift */,
+				D54C339324C9CDA7006AB7D6 /* StorageProvider.swift */,
+				D56E33FB24D2DDE300A490EB /* Encryption */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D56E33FB24D2DDE300A490EB /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				D515CF7C24CF6092006DED7D /* KeyForEncrypte.swift */,
+				D56E33F824D2BDCD00A490EB /* EncryptionManager.swift */,
+				D5121D0E24CF12DC00789A93 /* EncryptionWork.swift */,
+			);
+			path = Encryption;
 			sourceTree = "<group>";
 		};
 		D5D850D924C845E7005415CB /* Network */ = {
